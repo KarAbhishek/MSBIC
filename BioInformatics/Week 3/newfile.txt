@@ -1,0 +1,704 @@
+def string_spelled_by_genome(list_of_strings):
+    string = list_of_strings[0]
+    for i in list_of_strings[1:]:
+        string += i[-1]
+    return string
+
+
+print(string_spelled_by_genome(['ACCGA'
+,'CCGAA'
+,'CGAAG'
+,'GAAGC'
+,'AAGCT']))
+def de_brujin_graph(k, text):
+    prefix_hm = {}
+    for i in range(len(text)-k+1):
+        k_mer = text[i:i+k]
+        prefix = k_mer[:-1]
+        suffix = k_mer[1:]
+        prefix_hm[prefix] = suffix
+    ret_hm = {}
+    for i in prefix_hm:
+        if prefix_hm[i] in prefix_hm:
+            add_value_to_key(ret_hm, i, prefix_hm[prefix_hm[i]])
+    return ret_hm
+
+def de_brujin_graph(k, text):
+    prefix_hm = {}
+    for i in range(len(text)-k+1):
+        k_mer = text[i:i + k]
+        prefix = k_mer[:-1]
+        suffix = k_mer[1:]
+        add_value_to_key(prefix_hm, prefix, suffix)
+    return prefix_hm
+
+def add_value_to_key(hm, key, value):
+    try:
+        hm[key] += [value]
+    except:
+        hm[key] = [value]
+
+def arrow_format(hm):
+    return '\n'.join(['%s -> %s' % (key, ','.join(value)) for (key, value) in hm.items()])
+
+
+print(arrow_format(de_brujin_graph(12, '')))import sys
+import random
+
+
+# def eulerian_cycle(hm):
+#
+#     #visited_ls = [False for i in range(list_len)]
+#     cycle = []
+#     while hm is not None:
+#         list_len = len(hm)
+#         rand_int = random.randint(list_len)
+#         the_list = hm[rand_int]
+#         the_chosen_one = the_list[0]
+#         if len(the_list) == 1:
+#             del hm[rand_int]
+#         else:
+#             del the_list[0]
+#         while the_chosen_one not in cycle:
+#             cycle.append(the_chosen_one)
+#             the_chosen_one = hm[the_chosen_one]
+
+def random_walk(edge, graph_cpy):
+    if edge is None:
+        edge = next(iter(graph_cpy.keys()))
+    cycle = []
+    while True:
+        prev_edge = edge
+        edge = graph_cpy[edge][0]
+        cycle.append(edge)
+        remove(graph_cpy, prev_edge)
+        if not (graph_cpy is not None and edge in graph_cpy and graph_cpy[edge] is not None and graph_cpy[edge] != []):
+            break
+    return cycle
+
+def remove(graph, edge):
+    if len(graph[edge]) == 1:
+        del graph[edge]
+    else:
+        del graph[edge][0]
+
+
+def more_nodes(graph):
+    return 0 < len(graph)
+
+
+def unexplored_edge(cycle, graph):
+    for idx, elem in enumerate(cycle):
+        if elem in graph:
+            return idx, elem
+
+def eulerian_cycle(graph):
+    cycle = random_walk(None, graph)
+    while more_nodes(graph):
+        edge_idx, edge = unexplored_edge(cycle, graph)
+        cycle = cycle[edge_idx+1:] + cycle[:edge_idx+1] + random_walk(edge, graph)
+    return [cycle[-1]]+cycle
+
+def is_eulerian_cycle(hm):
+    return is_balanced(hm) and not is_diconnected(hm)
+
+def unformat_to_hm(ls):
+    return {input.split(' -> ')[0]: input.split(' -> ')[1].split(',') for input in ls}
+
+def is_balanced(hm):
+    set_all_elem = {i for i in hm}.union({j for i in hm for j in hm[i]})
+    for i in set_all_elem:
+        indegree = sum([1 for j in hm if j == i])
+        outdegree = sum([1 for j in hm for k in hm[j] if k == i])
+        if indegree != outdegree:
+            return False
+    return True
+
+def is_diconnected(hm):
+    return len([True for i in hm if hm[i] == [] or hm[i] is None]) >= 1
+
+if __name__ == '__main__':
+    file = open('data/input')
+
+    lines = file.read().splitlines()
+    hm = unformat_to_hm(lines)
+    print((hm))
+
+    output = eulerian_cycle(hm)
+    #
+    formatted_output = '->'.join(output)
+    #
+    print(formatted_output)
+import sys
+import random
+
+def random_walk(edge, graph_cpy):
+    if edge is None:
+        edge = next(iter(graph_cpy.keys()))
+    cycle = []
+    while True:
+        prev_edge = edge
+        edge = graph_cpy[edge][0]
+        cycle.append(edge)
+        remove(graph_cpy, prev_edge)
+        try:
+            if not (graph_cpy is not None and edge in graph_cpy and graph_cpy[edge] is not None and graph_cpy[edge] != []):
+                break
+        except:
+            print()
+    return cycle
+
+def remove(graph, edge):
+    if len(graph[edge]) == 1:
+        del graph[edge]
+    else:
+        del graph[edge][0]
+
+
+def more_nodes(graph):
+    return 0 < len(graph)
+
+
+def unexplored_edge(cycle, graph):
+    for idx, elem in enumerate(cycle):
+        if elem in graph:
+            return idx, elem
+
+def eulerian_cycle(graph):
+    cycle = random_walk(None, graph)
+    while more_nodes(graph):
+        #try:
+        edge_idx, edge = unexplored_edge(cycle, graph)
+        cycle = cycle[edge_idx+1:] + cycle[:edge_idx+1] + random_walk(edge, graph)
+        #except:
+            #print()
+    return cycle
+
+def is_eulerian_cycle(hm):
+    return is_balanced(hm) and not is_diconnected(hm)
+
+def unformat_to_hm(ls):
+    return {input.split(' -> ')[0]: input.split(' -> ')[1].split(',') for input in ls}
+
+def is_balanced(hm):
+    set_all_elem = {i for i in hm}.union({j for i in hm for j in hm[i]})
+    for i in set_all_elem:
+        indegree = sum([1 for j in hm if j == i])
+        outdegree = sum([1 for j in hm for k in hm[j] if k == i])
+        if indegree != outdegree:
+            return False
+    return True
+
+def is_diconnected(hm):
+    return len([True for i in hm if hm[i] == [] or hm[i] is None]) >= 1
+
+def eulerian_path(hm):
+    value_combos = list()
+    for i in hm:
+        value_combos += (hm[i])
+    key_combos = list(hm.keys())
+    source = None
+    destination = None
+    for i in (set(key_combos)|set(value_combos)):
+        indegree = value_combos.count(i)
+        outdegree = len(hm[i]) if i in hm else 0
+        if indegree > outdegree:
+            source = i
+        elif indegree < outdegree:
+            destination = i
+    if source not in hm:
+        hm[source] = [destination]
+    else:
+        hm[source].append(destination)
+    ec_ret = eulerian_cycle(hm)
+    fulcrum = [i for i in range(len(ec_ret)-1) if ec_ret[i] == source and ec_ret[i+1] == destination]
+    return ec_ret[fulcrum[0]+1:] + ec_ret[:fulcrum[0]+1]
+
+
+if __name__ == '__main__':
+    file = open('data/input')
+
+    lines = file.read().splitlines()
+    hm = unformat_to_hm(lines)
+
+    output = eulerian_path(hm)
+    #
+    formatted_output = '->'.join(output)
+    #
+    print(formatted_output)
+def de_brujin_graph(list_of_k_mers):
+    prefix_hm = {}
+    for k_mer in list_of_k_mers:
+        prefix = k_mer[:-1]
+        suffix = k_mer[1:]
+        add_value_to_key(prefix_hm, prefix, suffix)
+    return prefix_hm
+
+def add_value_to_key(hm, key, value):
+    try:
+        hm[key] += [value]
+    except:
+        hm[key] = [value]
+
+def arrow_format(hm):
+    return '\n'.join(['%s -> %s' % (key, ','.join(value)) for (key, value) in hm.items()])
+
+
+list_of_k_mers = []
+print(arrow_format(de_brujin_graph(list_of_k_mers)))
+def degree(node, graph):
+    value_combos = list()
+    for i in graph:
+        value_combos += (graph[i])
+    key_combos = list(graph.keys())
+    indegree = value_combos.count(node)
+    outdegree = len(graph[node]) if node in graph else 0
+    return indegree, outdegree
+
+
+def isolated_cycle(graph):
+    cycle = [graph]
+    deg_cycle = degree(cycle[-1], graph)
+    while deg_cycle[0] == 1 and deg_cycle[1] == 1:
+        deg_cycle = degree(cycle[-1], graph)
+        cycle.append(deg_cycle[cycle[-1]][0])
+        if deg_cycle[cycle[-1]][0] == deg_cycle[cycle[-1]][1]:
+            return cycle
+    return None
+
+
+def maximal_non_branching_paths(graph):
+    paths = []
+    for node in graph:
+        deg_node = degree(node, graph)
+        if not (deg_node[0] == 1 and deg_node[1] == 1):
+            if deg_node[1] > 0:
+                w = graph[node]
+                for outgoing_edge in w:
+                    non_branching_path = [outgoing_edge]
+                    deg_w = degree(node, graph)
+                    while deg_w[0] == 1 and deg_w[1] == 1:
+                        non_branching_path.append(outgoing_edge)
+                        w = graph[w]
+                    paths.append(non_branching_path)
+    for cycle in isolated_cycle(graph):
+        paths.append(cycle)
+    return paths
+
+import sys
+
+
+def paired_composition(k, d, text):
+    k_d_mer_list = []
+    for idx in range(len(text)-k-k-d+1):
+        k_d_mer_1 = text[idx:idx+k]
+        k_d_mer_2 = text[idx+k+d:idx+k+k+d]
+        k_d_mer_list.append('('+k_d_mer_1+'|'+k_d_mer_2+')')
+    return sorted(k_d_mer_list)
+
+
+if __name__ == '__main__':
+
+    k_out = 3
+    d_out = 2
+    text_out = 'TAATGCCATGGGATGTT'
+
+    output = paired_composition(k_out, d_out, text_out)
+
+    formatted_output = ''.join(output)
+
+    print(formatted_output)
+import sys
+
+
+def string_composition(text, k):
+    k_mer_set = list()
+    for idx in range(len(text)-k+1):
+        k_mer = text[idx:idx+k]
+        k_mer_set.append(k_mer)
+    sorted_set = sorted(list(k_mer_set))
+    print('Size is ', len(sorted_set))
+    return sorted_set
+
+
+if __name__ == '__main__':
+    file = open('data/input')
+    lines = file.read().splitlines()
+    k_out = int(lines[0])
+    text_out = lines[1]
+    output = string_composition(text_out, k_out)
+    formatted_output = '\n'.join(output)
+    print(formatted_output)
+
+    file = open('output/3_2', 'w+')
+    file.write(formatted_output)
+    file.close()
+def attach_with_later_cards(my_card, all_cards_except_mine, return_list):
+    if len(all_cards_except_mine) == 0:
+        return return_list
+    for matcher_idx, matcher_card in enumerate(all_cards_except_mine):
+        if my_card[-(len(my_card)-1):] == matcher_card[:(len(my_card)-1)]:
+            return_list.append(matcher_card)
+            return attach_with_later_cards(matcher_card, all_cards_except_mine[:matcher_idx] + all_cards_except_mine[
+                                                                                               matcher_idx + 1:],
+                                           return_list)
+    return []
+
+
+list_of_strings = ['AAT',
+                   'ATG',
+                   'CAT',
+                   'CCA',
+                   'GAT',
+                   'GCC',
+                   'GGA',
+                   'GGG',
+                   'GTT',
+                   'TAA',
+                   'TGC',
+                   'TGG',
+                   'TGT']
+for idx, i in enumerate(list_of_strings):
+    return_list = [i]
+    attach_with_later_cards(i, list_of_strings[:idx] + list_of_strings[idx + 1:], return_list)
+    if len(return_list) == len(list_of_strings):
+        print(return_list)
+import sys
+from BioInformatics.string_reconstruction_orig import string_spelled_by_genome, eulerian_path
+#
+# def paired_de_bruijn(gapped_patterns, k, d):
+#     main_paired_hm = {}
+#     for gapped_pattern in gapped_patterns:
+#         if gapped_pattern[:-1] in main_paired_hm:
+#             main_paired_hm[gapped_pattern[:-1]].append(gapped_pattern[1:])
+#         else:
+#             main_paired_hm[gapped_pattern[:-1]] = gapped_pattern[1:]
+#     paired_e = eulerian_path(main_paired_hm)
+#     return string_spelled_by_gapped_patterns(paired_e, k, d)
+
+
+def paired_de_bruijn(gapped_patterns, k, d):
+    main_paired_hm = {}
+    for unsplit_gap in gapped_patterns:
+        gapped_pattern = unsplit_gap.split('|')
+        if (gapped_pattern[0][:-1], gapped_pattern[1][:-1]) in main_paired_hm:
+            main_paired_hm[(gapped_pattern[0][:-1], gapped_pattern[1][:-1])].append((gapped_pattern[0][1:], gapped_pattern[1][1:]))
+        else:
+            main_paired_hm[(gapped_pattern[0][:-1], gapped_pattern[1][:-1])] = [(gapped_pattern[0][1:], gapped_pattern[1][1:])]
+    paired_e = eulerian_path(main_paired_hm)
+    return string_spelled_by_gapped_patterns(paired_e, k, d)
+
+
+def string_spelled_by_gapped_patterns(gapped_patterns, k, d):
+    first_patterns = []
+    second_patterns = []
+    for gapped_pattern in gapped_patterns:
+        #split_gap = gapped_pattern.split('|')
+        first_patterns.append(gapped_pattern[0])
+        second_patterns.append(gapped_pattern[1])
+    prefix_string = string_spelled_by_genome(first_patterns)
+    suffix_string = string_spelled_by_genome(second_patterns)
+    for i in range(k+d+1, len(prefix_string)):
+        if prefix_string[i] != suffix_string[i-k-d]:
+            return "there is no string spelled by the gapped patterns"
+
+    prefix_string += suffix_string[-(k+d):]
+    return prefix_string
+
+
+file = open('data/gap')
+lines = file.read().splitlines()
+place_holder = lines[0].split(' ')
+gapped_patterns_out = lines[1:]
+k_out = int(place_holder[0])
+d_out = int(place_holder[1])
+print(paired_de_bruijn(gapped_patterns_out, k_out, d_out))def attach_with_later_cards(my_card, all_cards_except_mine, return_list):
+    controller_stack = [[my_card, all_cards_except_mine]]
+    while len(controller_stack) != 0:
+        [my_card, all_cards_except_mine] = controller_stack.pop()
+        if len(all_cards_except_mine) == 0:
+            break
+        for matcher_idx, matcher_card in enumerate(all_cards_except_mine):
+            if my_card[-(len(my_card)-1):] == matcher_card[:(len(my_card)-1)]:
+                return_list.append(matcher_card)
+                controller_stack.append([matcher_card, all_cards_except_mine[:matcher_idx] + all_cards_except_mine[
+                                                                                                   matcher_idx + 1:]])
+    return return_list
+
+
+list_of_strings = ['AAT', 'ATG', 'GTT', 'TAA', 'TGT']
+for idx, i in enumerate(list_of_strings):
+    return_list = [i]
+    attach_with_later_cards(i, list_of_strings[:idx] + list_of_strings[idx + 1:], return_list)
+    if len(return_list) == len(list_of_strings):
+        print(return_list)
+def attach_with_later_cards(my_card, all_cards_except_mine, return_list):
+    controller_stack = [[my_card]]
+    while len(controller_stack) != 0:
+        [my_card] = controller_stack.pop()
+        if len(all_cards_except_mine) == 0:
+            break
+        for matcher_idx, matcher_card in enumerate(all_cards_except_mine):
+            if my_card[-(len(my_card)-1):] == matcher_card[:(len(my_card)-1)]:
+                return_list.append(matcher_card)
+                controller_stack.append([matcher_card])
+    return return_list
+
+
+list_of_strings = ['AAT', 'ATG', 'GTT', 'TAA', 'TGT']
+for idx, i in enumerate(list_of_strings):
+    return_list = [i]
+    attach_with_later_cards(i, list_of_strings, return_list)
+    if len(return_list) == len(list_of_strings):
+        print(return_list)
+import sys
+
+def random_walk(edge, graph_cpy):
+    if edge is None:
+        edge = next(iter(graph_cpy.keys()))
+    cycle = []
+    while True:
+        prev_edge = edge
+        edge = graph_cpy[edge][0]
+        cycle.append(edge)
+        remove(graph_cpy, prev_edge)
+        if not (graph_cpy is not None and edge in graph_cpy and graph_cpy[edge] is not None and graph_cpy[edge] != []):
+            break
+    return cycle
+
+def remove(graph, edge):
+    if len(graph[edge]) == 1:
+        del graph[edge]
+    else:
+        del graph[edge][0]
+
+
+def more_nodes(graph):
+    return 0 < len(graph)
+
+
+def unexplored_edge(cycle, graph):
+    for idx, elem in enumerate(cycle):
+        if elem in graph:
+            return idx, elem
+
+def eulerian_cycle(graph):
+    cycle = random_walk(None, graph)
+    while more_nodes(graph):
+        #try:
+        edge_idx, edge = unexplored_edge(cycle, graph)
+        cycle = cycle[edge_idx+1:] + cycle[:edge_idx+1] + random_walk(edge, graph)
+        #except:
+            #print()
+    return cycle
+
+def is_eulerian_cycle(hm):
+    return is_balanced(hm) and not is_diconnected(hm)
+
+def unformat_to_hm(ls):
+    return {input.split(' -> ')[0]: input.split(' -> ')[1].split(',') for input in ls}
+
+def is_balanced(hm):
+    set_all_elem = {i for i in hm}.union({j for i in hm for j in hm[i]})
+    for i in set_all_elem:
+        indegree = sum([1 for j in hm if j == i])
+        outdegree = sum([1 for j in hm for k in hm[j] if k == i])
+        if indegree != outdegree:
+            return False
+    return True
+
+def is_diconnected(hm):
+    return len([True for i in hm if hm[i] == [] or hm[i] is None]) >= 1
+
+def eulerian_path(hm):
+    value_combos = list()
+    for i in hm:
+        value_combos += (hm[i])
+    key_combos = list(hm.keys())
+    source = None
+    destination = None
+    for i in (set(key_combos)|set(value_combos)):
+        indegree = value_combos.count(i)
+        outdegree = len(hm[i]) if i in hm else 0
+        if indegree > outdegree:
+            source = i
+        elif indegree < outdegree:
+            destination = i
+    if source not in hm:
+        hm[source] = [destination]
+    else:
+        hm[source].append(destination)
+    ec_ret = eulerian_cycle(hm)
+    fulcrum = [i for i in range(len(ec_ret)-1) if ec_ret[i] == source and ec_ret[i+1] == destination]
+    return ec_ret[fulcrum[0]+1:] + ec_ret[:fulcrum[0]+1]
+
+
+def de_brujin_graph(list_of_k_mers):
+    prefix_hm = {}
+    for k_mer in list_of_k_mers:
+        prefix = k_mer[:-1]
+        suffix = k_mer[1:]
+        add_value_to_key(prefix_hm, prefix, suffix)
+    return prefix_hm
+
+def add_value_to_key(hm, key, value):
+    try:
+        hm[key] += [value]
+    except:
+        hm[key] = [value]
+
+def arrow_format(hm):
+    return '\n'.join(['%s -> %s' % (key, ','.join(value)) for (key, value) in hm.items()])
+
+def string_spelled_by_genome(list_of_strings):
+    string = list_of_strings[0]
+    for i in list_of_strings[1:]:
+        string += i[-1]
+    return string
+
+def string_reconstruction(k_mer_list, k):
+    de_brujin_graph_for_kmers = de_brujin_graph(k_mer_list)
+    e = eulerian_path(de_brujin_graph_for_kmers)
+    return string_spelled_by_genome(e)
+
+
+
+if __name__ == '__main__':
+    file = open('data/string_reconstruction')
+
+    lines = file.read().splitlines()
+    k_out = int(lines[0])
+    text_list_out = lines[1:]
+
+    output = string_reconstruction(text_list_out, k_out)
+
+    print(output)
+import sys
+
+def random_walk(edge, graph_cpy):
+    if edge is None:
+        edge = next(iter(graph_cpy.keys()))
+    cycle = []
+    while True:
+        prev_edge = edge
+        edge = graph_cpy[edge][0]
+        cycle.append(edge)
+        remove(graph_cpy, prev_edge)
+        if not (graph_cpy is not None and edge in graph_cpy and graph_cpy[edge] is not None and graph_cpy[edge] != []):
+            break
+    return cycle
+
+def remove(graph, edge):
+    if len(graph[edge]) == 1:
+        del graph[edge]
+    else:
+        del graph[edge][0]
+
+
+def more_nodes(graph):
+    return 0 < len(graph)
+
+
+def unexplored_edge(cycle, graph):
+    for idx, elem in enumerate(cycle):
+        if elem in graph:
+            return idx, elem
+
+def eulerian_cycle(graph):
+    cycle = random_walk(None, graph)
+    while more_nodes(graph):
+        #try:
+        edge_idx, edge = unexplored_edge(cycle, graph)
+        cycle = cycle[edge_idx+1:] + cycle[:edge_idx+1] + random_walk(edge, graph)
+        #except:
+            #print()
+    return cycle
+
+def is_eulerian_cycle(hm):
+    return is_balanced(hm) and not is_diconnected(hm)
+
+def unformat_to_hm(ls):
+    return {input.split(' -> ')[0]: input.split(' -> ')[1].split(',') for input in ls}
+
+def is_balanced(hm):
+    set_all_elem = {i for i in hm}.union({j for i in hm for j in hm[i]})
+    for i in set_all_elem:
+        indegree = sum([1 for j in hm if j == i])
+        outdegree = sum([1 for j in hm for k in hm[j] if k == i])
+        if indegree != outdegree:
+            return False
+    return True
+
+def is_diconnected(hm):
+    return len([True for i in hm if hm[i] == [] or hm[i] is None]) >= 1
+
+def eulerian_path(hm):
+    value_combos = list()
+    for i in hm:
+        value_combos += (hm[i])
+    key_combos = list(hm.keys())
+    source = None
+    destination = None
+    for i in (set(key_combos)|set(value_combos)):
+        indegree = value_combos.count(i)
+        outdegree = len(hm[i]) if i in hm else 0
+        if indegree > outdegree:
+            source = i
+        elif indegree < outdegree:
+            destination = i
+    if source is not None and destination is not None:
+        if source not in hm:
+            hm[source] = [destination]
+        else:
+            hm[source].append(destination)
+    ec_ret = eulerian_cycle(hm)
+    if source is not None and destination is not None:
+        fulcrum = [i for i in range(len(ec_ret)-1) if ec_ret[i] == source and ec_ret[i+1] == destination]
+        final_ret = ec_ret[fulcrum[0]+1:] + ec_ret[:fulcrum[0]+1]
+    else:
+        final_ret = ec_ret
+    return final_ret
+
+
+def de_brujin_graph(list_of_k_mers):
+    prefix_hm = {}
+    for k_mer in list_of_k_mers:
+        prefix = k_mer[:-1]
+        suffix = k_mer[1:]
+        add_value_to_key(prefix_hm, prefix, suffix)
+    return prefix_hm
+
+def add_value_to_key(hm, key, value):
+    try:
+        hm[key] += [value]
+    except:
+        hm[key] = [value]
+
+def arrow_format(hm):
+    return '\n'.join(['%s -> %s' % (key, ','.join(value)) for (key, value) in hm.items()])
+
+def string_spelled_by_genome(list_of_strings):
+    string = list_of_strings[0]
+    for i in list_of_strings[1:]:
+        string += i[-1]
+    return string
+
+def string_reconstruction(k_mer_list, k):
+    de_brujin_graph_for_kmers = de_brujin_graph(k_mer_list)
+    e = eulerian_cycle(de_brujin_graph_for_kmers)
+    return ''.join([item[-1] for item in e[:-1]])#string_spelled_by_genome(e[:-1])
+
+def universal_string_problem(k):
+    k_mer_list = [bin(i)[2:].zfill(k) for i in range(2**k)]
+    return string_reconstruction(k_mer_list, k)
+
+if __name__ == '__main__':
+    #file = open('data/string_reconstruction')
+
+    #lines = file.read().splitlines()
+    k_out = 8#int(lines[0])
+    #ext_list_out = lines[1:]
+
+    output = universal_string_problem(k_out)
+
+    print(output)
