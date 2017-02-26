@@ -53,11 +53,8 @@ def link_till_end(hm, source, end, maxTally, currTally):
         elif not maxTally:
             maxTally.append(currTally[0])
             maxTally.append(currTally[1])
-        #currTally[0]
-        #currTally[1]
         print(maxTally[0])
         print('->'.join(map(str, maxTally[1])))
-        #del currTally[-1]
         return
     elif source not in hm:
         return
