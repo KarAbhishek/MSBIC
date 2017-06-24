@@ -2,6 +2,9 @@
   <dictionary name="karab">
     <words>
       <w>gapped</w>
+      <w>indel</w>
+      <w>indeled</w>
+      <w>viterbi</w>
     </words>
   </dictionary>
 </component>

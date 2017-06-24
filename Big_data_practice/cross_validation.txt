@@ -1,0 +1,6 @@
+**************************************Cross Validation Begins**************************************
+The mean accuracy with cross validation is 94.1666666667%
+The standard deviation of the accuracy with cross validation is 0.075
+The mean error with cross validation is 0.0583333333333
+The standard deviation of the error with cross validation is 0.075
+****************************************Cross Validation Ends**************************************

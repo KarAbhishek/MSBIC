@@ -1,0 +1,435 @@
+###########################Better BW MAtching#########################
+
+def get_count_dict(last_column):
+    from collections import defaultdict
+
+    def something():
+        return defaultdict(int)
+    count_dict = defaultdict(something)
+    for i in range(len(last_column)):
+        for nucleotide in 'ATCG$':
+            count_dict[nucleotide][i + 1] = count_dict[nucleotide][i] + (1 if nucleotide == last_column[i][0] else 0)
+    return count_dict
+
+
+def bw_matching(bwt_text, patterns):
+    _, start_end_dict, last_to_first, last_column = preprocess_and_get_dict(bwt_text)
+    ret = []
+    for pattern in patterns:
+        ret.append(bw_single_pattern_match(last_column, pattern, last_to_first))
+    return ret
+
+
+def get_first_occurrence(first_column):
+    first_column = [i[0] for i in first_column]
+    return {nucleotide: first_column.index(nucleotide) for nucleotide in 'ATCG$'}
+
+
+def bw_single_pattern_match(last_column, pattern, last_to_first):
+    top = 0
+    bottom = len(last_column) - 1
+    first_occurrence = get_first_occurrence(sorted(last_column))
+    count_dict = get_count_dict(last_column)
+    while top <= bottom:
+        if pattern:
+            symbol = pattern[-1]
+            pattern = pattern[:-1]
+            top_idx, bottom_idx = None, None
+            for position in range(top, bottom+1):
+                if last_column[position][0] == symbol:
+                    top_idx = position
+                    bottom_idx = position
+                    break
+            # for position in range(top, bottom+1):
+            #     if last_column[position][0] == symbol:
+            #         bottom_idx = position
+
+            if top_idx is None and bottom_idx is None:
+                return 0
+            top = first_occurrence[symbol] + count_dict[symbol][top]
+            bottom = first_occurrence[symbol] + count_dict[symbol][bottom + 1] - 1
+        else:
+            return bottom - top + 1
+
+
+def single_pattern_match(start_end_dict, pattern):
+    later_starts = list(start_end_dict.keys())
+    for char_idx in range(1, len(pattern))[::-1]:
+        last_char = pattern[char_idx]
+        penultimate_char = pattern[char_idx - 1]
+        later_starts = [edge_end for edge_start, edge_end in start_end_dict.items() if
+                        edge_start[0] == last_char and edge_end[0] == penultimate_char and edge_start in later_starts]
+        if not later_starts:
+            return 0
+
+    return len(later_starts)
+
+if __name__ == '__main__':
+    file = open('bw_matching_data.txt')
+    lines = file.read().splitlines()
+    bwt_text_out = lines[0]
+    patterns_out = lines[1].split()
+    out = bw_matching(bwt_text_out, patterns_out)
+    print(' '.join(map(str, out)))
+
+
+
+#################################BW Matching My way############################
+from BioInformatics.Week_13.inverse_BWT import preprocess_and_get_dict
+
+
+def bw_matching(bwt_text, patterns):
+    _, start_end_dict, _, _ = preprocess_and_get_dict(bwt_text)
+    ret = []
+    for pattern in patterns:
+        ret.append(single_pattern_match(start_end_dict, pattern))
+    return ret
+
+
+def single_pattern_match(start_end_dict, pattern):
+    later_starts = list(start_end_dict.keys())
+    for char_idx in range(1, len(pattern))[::-1]:
+        last_char = pattern[char_idx]
+        penultimate_char = pattern[char_idx - 1]
+        later_starts = [edge_end for edge_start, edge_end in start_end_dict.items() if
+                        edge_start[0] == last_char and edge_end[0] == penultimate_char and edge_start in later_starts]
+        if not later_starts:
+            return 0
+
+    return len(later_starts)
+
+if __name__ == '__main__':
+    file = open('bw_matching_data.txt')
+    lines = file.read().splitlines()
+    bwt_text_out = lines[0]
+    patterns_out = lines[1].split()
+    out = bw_matching(bwt_text_out, patterns_out)
+    print(' '.join(map(str, out)))
+
+
+##########################Approx matching#################################
+from BioInformatics.Week_13.inverse_BWT import preprocess_and_get_dict, generate_checkpoints
+
+
+def matches(strin_1, strin_2, threshold):
+    mismatch_count = 0
+    for idx in range(len(strin_1)):
+        if strin_1[idx] == strin_2[idx]:
+            mismatch_count += 1
+            if mismatch_count > threshold:
+                return False
+    return True
+
+
+def approx_pattern_matching(bwt_text, patterns):
+    _, start_end_dict, _, _ = preprocess_and_get_dict(bwt_text)
+    ret = []
+    for pattern in patterns:
+        ret.append(single_pattern_match(start_end_dict, pattern))
+    return ret
+
+
+def single_pattern_match(start_end_dict, pattern):
+    later_starts = list(start_end_dict.keys())
+    for char_idx in range(1, len(pattern))[::-1]:
+        last_char = pattern[char_idx]
+        penultimate_char = pattern[char_idx - 1]
+        later_starts = [edge_end for edge_start, edge_end in start_end_dict.items() if
+                        edge_start[0] == last_char and edge_end[0] == penultimate_char and edge_start in later_starts]
+        if not later_starts:
+            return 0
+
+    return len(later_starts)
+
+
+bwt_ret = bwt(bwt_text_out)
+suf_arr_ret = (suffix_arrays(bwt_ret))
+patterns_out = lines[1].split()
+
+print(suf_arr_ret)
+
+print(approx_pattern_match(bwt_text_out, patterns))
+
+
+
+#############################Approx matching brute force#########################
+# put your python code here
+
+def hamming_distance(str1, str2):
+    count = 0
+    for idx, elem in enumerate(str1):
+        if str2[idx] != elem:
+            count += 1
+    return count
+
+def pattern_list(text, pattern, d):
+    start_pos = []
+    for i in range(len(text) - len(pattern) + 1):
+        if hamming_distance(text[i:i + len(pattern)], pattern) <= d:
+            start_pos.append(i)
+    return start_pos
+
+# readL = sys.stdin.read().splitlines()
+# st1 = readL[0]
+# st2 = readL[1]
+# st3 = int(readL[2])
+# print(pattern_list(st1, st2, st3))
+
+file = open('input_1.txt')
+lines = file.read().splitlines()
+pattern = lines[0]
+list_pat = lines[1].split()
+d = int(lines[2])
+ls = []
+for i in list_pat:
+    ls += pattern_list(pattern, i, d)
+print(' '.join(map(str, sorted(ls))))from BioInformatics.Week_13.inverse_BWT import preprocess_and_get_dict
+
+
+
+###################################BW Matching as per the pseudo code given#######################
+from BioInformatics.Week_13.inverse_BWT import preprocess_and_get_dict
+
+
+def bw_matching(bwt_text, patterns):
+    _, start_end_dict, last_to_first, last_column = preprocess_and_get_dict(bwt_text)
+    ret = []
+    for pattern in patterns:
+        ret.append(bw_single_pattern_match(last_column, pattern, last_to_first))
+    return ret
+
+
+def bw_single_pattern_match(last_column, pattern, last_to_first):
+    top = 0
+    bottom = len(last_column) - 1
+    while top <= bottom:
+        if pattern:
+            symbol = pattern[-1]
+            pattern = pattern[:-1]
+            top_idx, bottom_idx = None, None
+            for position in range(top, bottom+1):
+                if last_column[position][0] == symbol:
+                    top_idx = position
+                    break
+            for position in range(top, bottom+1):
+                if last_column[position][0] == symbol:
+                    bottom_idx = position
+            if top_idx is None or bottom_idx is None:
+                return 0
+            top = last_to_first[top_idx]
+            bottom = last_to_first[bottom_idx]
+        else:
+            return bottom - top + 1
+
+
+def single_pattern_match(start_end_dict, pattern):
+    later_starts = list(start_end_dict.keys())
+    for char_idx in range(1, len(pattern))[::-1]:
+        last_char = pattern[char_idx]
+        penultimate_char = pattern[char_idx - 1]
+        later_starts = [edge_end for edge_start, edge_end in start_end_dict.items() if
+                        edge_start[0] == last_char and edge_end[0] == penultimate_char and edge_start in later_starts]
+        if not later_starts:
+            return 0
+
+    return len(later_starts)
+
+if __name__ == '__main__':
+    file = open('bw_matching_data.txt')
+    lines = file.read().splitlines()
+    bwt_text_out = lines[0]
+    patterns_out = lines[1].split()
+    out = bw_matching(bwt_text_out, patterns_out)
+    print(' '.join(map(str, out)))
+
+
+
+#########################Inverse BWT#################################
+def preprocess_and_get_dict(final_string):
+    from collections import defaultdict
+    sort_final_string = sorted(final_string)
+    hm_1 = defaultdict(int)
+    hm_2 = defaultdict(int)
+    end_hm = {}
+    start_end_hm = {}
+    idx_path = {}
+    last_column = []
+    for idx, char in enumerate(final_string):
+        hm_1[char] += 1
+        hm_2[sort_final_string[idx]] += 1
+        end_hm[char + str(hm_1[char])] = sort_final_string[idx] + str(hm_2[sort_final_string[idx]])
+        start_end_hm[sort_final_string[idx] + str(hm_2[sort_final_string[idx]])] = char + str(hm_1[char])
+        idx_path[sort_final_string[idx] + str(hm_2[sort_final_string[idx]])] = idx
+        last_column.append(char + str(hm_1[char]))
+
+    last_to_first = {}
+    for edge_start, edge_end in start_end_hm.items():
+        last_to_first[idx_path[edge_start]] = idx_path[edge_end]
+    return end_hm, start_end_hm, last_to_first, last_column
+
+
+def inverse_bwt(final_string):
+    end_hm, _, _,  = preprocess_and_get_dict(final_string)
+    curr_node = '$1'
+    ret = []
+    while True:
+        curr_node = end_hm[curr_node]
+        if curr_node == '$1':
+            break
+        ret.append(curr_node[0])
+    ret.append('$')
+    return ret
+
+
+if __name__ == '__main__':
+    ret_out = inverse_bwt('TTACA$AAGTC')
+    print(''.join(ret_out))
+
+
+##########################Exact pattern match brute force########################
+file = open('input_1.txt')
+lines = file.read().splitlines()
+strin = lines[0]
+filter_list = lines[1:]
+ls = []
+for idx in range(len(strin)):
+    k_mer = strin[idx:idx+len(filter_list[0])]
+    if k_mer in filter_list:
+        ls.append(idx)
+
+print(' '.join(map(str, ls)))
+
+
+
+# file = open('input_1.txt')
+# lines = file.read().splitlines()
+# strin = lines[0]
+# filter_list = lines[1:]
+# ls = []
+# k_mer_list = []
+# for idx in range(len(strin)):
+#     k_mer_list.append(strin[idx:idx+len(filter_list[0])])
+#
+#
+# for k_mer in filter_list:
+#     try:
+#         ls.append(k_mer_list.index(k_mer))
+#     except ValueError:
+#         pass
+#
+# print(' '.join(map(str, ls)))
+
+
+##########################Exact pattern match efficient checkpoint########################
+from BioInformatics.Week_13.inverse_BWT import preprocess_and_get_dict
+
+
+def get_count_dict(last_column):
+    from collections import defaultdict
+
+    def something():
+        return defaultdict(int)
+    count_dict = defaultdict(something)
+    for i in range(len(last_column)):
+        for nucleotide in 'ATCG$':
+            count_dict[nucleotide][i + 1] = count_dict[nucleotide][i] + (1 if nucleotide == last_column[i][0] else 0)
+    return count_dict
+
+
+def bw_matching(bwt_text, patterns):
+    _, start_end_dict, last_to_first, last_column = preprocess_and_get_dict(bwt_text)
+    ret = []
+    for pattern in patterns:
+        ret.append(bw_single_pattern_match(last_column, pattern, last_to_first))
+    return ret
+
+
+def get_first_occurrence(first_column):
+    first_column = [i[0] for i in first_column]
+    return {nucleotide: first_column.index(nucleotide) for nucleotide in 'ATCG$'}
+
+
+def bw_single_pattern_match(last_column, pattern, last_to_first):
+    top = 0
+    bottom = len(last_column) - 1
+    first_occurrence = get_first_occurrence(sorted(last_column))
+    count_dict = get_count_dict(last_column)
+    while top <= bottom:
+        if pattern:
+            symbol = pattern[-1]
+            pattern = pattern[:-1]
+            top_idx, bottom_idx = None, None
+            for position in range(top, bottom+1):
+                if last_column[position][0] == symbol:
+                    top_idx = position
+                    bottom_idx = position
+                    break
+            # for position in range(top, bottom+1):
+            #     if last_column[position][0] == symbol:
+            #         bottom_idx = position
+
+            if top_idx is None and bottom_idx is None:
+                return 0
+            # print('top here', suf_arr_ret[top])
+            # print('bottom here', suf_arr_ret[top])
+            top = first_occurrence[symbol] + count_dict[symbol][top]
+            bottom = first_occurrence[symbol] + count_dict[symbol][bottom + 1] - 1
+        else:
+            return bottom - top + 1
+
+
+def single_pattern_match(start_end_dict, pattern):
+    later_starts = list(start_end_dict.keys())
+    for char_idx in range(1, len(pattern))[::-1]:
+        last_char = pattern[char_idx]
+        penultimate_char = pattern[char_idx - 1]
+        later_starts = [edge_end for edge_start, edge_end in start_end_dict.items() if
+                        edge_start[0] == last_char and edge_end[0] == penultimate_char and edge_start in later_starts]
+        if not later_starts:
+            return 0
+
+    return len(later_starts)
+
+if __name__ == '__main__':
+    file = open('bw_matching_data.txt')
+    lines = file.read().splitlines()
+
+
+
+    bwt_text_out = lines[0]
+    bwt_ret = bwt(bwt_text_out)
+    suf_arr_ret = (suffix_arrays(bwt_ret))
+
+    print(suf_arr_ret)
+    patterns_out = lines[1].split()
+    out = bw_matching(bwt_text_out, patterns_out)
+    print(' '.join(map(str, out)))def q3(n, d):
+    return n//(d+1)
+
+print('k is', q3(n=101, d = 3))from operator import itemgetter
+
+
+def suffix_arrays(strin):
+    ls = []
+    for i in range(len(strin)):
+        ls.append(strin[i:])
+    return [i[0] for i in sorted(enumerate(ls), key=itemgetter(1))]
+
+
+
+
+
+
+#####################################BWT#############################################
+def bwt(strin):
+    ls = []
+    for idx in range(len(strin)):
+        ls.append(strin[idx:] + strin[:idx])
+    ret = []
+    for elem in sorted(ls):
+        ret.append(elem[-1])
+    return (''.join(ret))
+
+
+if __name__ == '__main__':
+    print(bwt('CACTTAAAGT$'))

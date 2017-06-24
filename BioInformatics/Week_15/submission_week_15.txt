@@ -1,0 +1,421 @@
+#######################Baum Welch Failed Attempt ########################
+
+from BioInformatics.Week_14.viterbi_algo import viterbi_algorithm, get_matrix, backtrack_viterbi
+from BioInformatics.Week_15.param_estimation import param_estimation
+
+
+def baum_welch_learning(ze_string, states, transition_matrix, emission_matrix):
+    for idx in range(1, num+1):
+        path = backtrack_viterbi(viterbi_algorithm(ze_string, states, transition_matrix, emission_matrix))
+        transition_matrix, emission_matrix = param_estimation(states, le_alphabets, ze_string, path)
+        transition_matrix = convert_dict_of_dicts_to_tuple_dict(transition_matrix)
+        emission_matrix = convert_dict_of_dicts_to_tuple_dict(emission_matrix)
+
+
+def convert_tuple_dict_to_dict_of_dicts(matrix):
+    import pandas as pd
+    idx = pd.MultiIndex.from_tuples(matrix.keys())
+    matrix = (pd.DataFrame(list(matrix.values()), index=idx, columns=['Score'])
+              .unstack(fill_value=0)['Score'].to_dict())
+    return matrix
+
+
+def convert_dict_of_dicts_to_tuple_dict(dict_of_dicts):
+    import pandas as pd
+    df = pd.DataFrame(dict_of_dicts)
+    return {(col, idx): df[col][idx] for col in df.columns.values for idx in df.index.values}
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    num = int(lines[0])
+    le_string = lines[2]
+    le_alphabets = lines[4].split()
+    states_out = lines[6].split()
+    logger_flag = True
+    transition_matrix_out = get_matrix(lines[8:8 + (len(states_out) + 1)], logger_flag)
+    emission_matrix_out = get_matrix(lines[(8 + len(states_out) + 2):], logger_flag)
+    print(transition_matrix_out, emission_matrix_out)
+    # transition_matrix_out_ = convert_tuple_dict_to_dict_of_dicts(transition_matrix_out)
+    # emission_matrix_out_ = convert_tuple_dict_to_dict_of_dicts(emission_matrix_out)
+
+    import pandas as pd
+
+    baum_welch_learning
+
+    # print(transition_matrix_out)
+    # print(emission_matrix_out)
+    transition_matrix_out = convert_tuple_dict_to_dict_of_dicts(transition_matrix_out)
+    emission_matrix_out = convert_tuple_dict_to_dict_of_dicts(emission_matrix_out)
+    print(pd.DataFrame(transition_matrix_out).round(3))
+    print(pd.DataFrame(emission_matrix_out).round(3))
+
+
+
+#########################Forward Backward ###############################
+from BioInformatics.Week_14.hidden_path import get_matrix
+
+
+def forward_backward(string, states, transition_matrix, emission_matrix):
+    from collections import defaultdict
+    forward = defaultdict(defaultdict)
+
+    for state in states:
+        forward[0][state] = (1.0 / len(states)) * emission_matrix[(state, string[0])]
+    for idx in range(1, len(string)):
+        for state_ in states:
+            forward[idx][state_] = 0
+            for state in states:
+                forward[idx][state_] += forward[idx - 1][state] * transition_matrix[state, state_] * \
+                                               emission_matrix[state_, string[idx]]
+    # ret = [forward[len(string) - 1][state] for state in states]
+    backward = defaultdict(lambda:defaultdict(int))
+    for state in states:
+        backward[len(string) - 1][state] = 1.0
+    for idx in range(len(string) - 1)[::-1]:
+        for state_ in states:
+            for state in states:
+                backward[idx][state_] += backward[idx + 1][state] * transition_matrix[state_, state] * emission_matrix[state, string[idx + 1]]
+    ret = {}
+    for idx in range(len(string)):
+        ret[string[idx]] = {}
+        total = 0
+        for state in states:
+            ret[string[idx]][state] = forward[idx][state] * backward[idx][state]
+            total += ret[string[idx]][state]
+        for state in states:
+            ret[string[idx]][state] = ret[string[idx]][state] / total
+
+    import pandas as pd
+    print(pd.DataFrame(ret).transpose())
+    return ret
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    le_string = lines[0]
+    le_alphabets = lines[2]
+    states_out = lines[4].split()
+    logger_flag = True
+    transition_matrix_out = get_matrix(lines[6:6 + (len(states_out) + 1)], logger_flag)
+    emission_matrix_out = get_matrix(lines[(6 + len(states_out) + 2):], logger_flag)
+    # print(le_string, le_alphabets, states_out, transition_matrix_out, emission_matrix_out)
+    tree_out = forward_backward(le_string, states_out, transition_matrix_out, emission_matrix_out)
+    print(tree_out)
+
+##################### Parameter estimation #########################
+def param_estimation(states, alphabet, ze_string, state_sequence):
+    from collections import defaultdict
+    transition_matrix = defaultdict(lambda: defaultdict(int))
+    for state_idx in range(len(state_sequence)-1):
+        transition_matrix[state_sequence[state_idx]][state_sequence[state_idx + 1]] += 1
+
+    for key in transition_matrix:
+        total = sum(transition_matrix[key].values())
+        for single in transition_matrix[key]:
+            transition_matrix[key][single] /= total
+    # for state in states:
+    #     for state_ in states:
+    #         try:
+    #             transition_matrix[state][state_] = state_sequence.count(state+state_)/state_sequence[1:].count(state)
+    #         except ZeroDivisionError:
+    #             transition_matrix[state][state_] = 1/len(states)
+
+    emission_matrix = defaultdict(lambda: defaultdict(int))
+    for state_idx, state in enumerate(state_sequence):
+        emitted_char = ze_string[state_idx]
+        emission_matrix[state][emitted_char] += 1
+
+    for key in emission_matrix:
+        total = sum(emission_matrix[key].values())
+        for single in emission_matrix[key]:
+            emission_matrix[key][single] /= total
+
+
+    import pandas as pd
+    tran_df = (pd.DataFrame(transition_matrix, index=states, columns=states).fillna(0).round(3))
+    emm_df = (pd.DataFrame(emission_matrix, index=alphabet, columns=states).fillna(0).round(3))
+    return tran_df.to_dict(), emm_df.to_dict()
+
+
+if __name__ == '__main__':
+    file = open('param_est_data')
+    lines = file.read().splitlines()
+    le_string = lines[0]
+    alphabet_out = lines[2].split()
+    state_sequence_out = lines[4]
+    states_out = lines[6].split()
+    param_estimation(states_out, alphabet_out, le_string, state_sequence_out)def get_index_np(threshold, aln):
+    cumulative_threshold = threshold * len(aln)
+    import numpy as np
+    np_aln = np.array([list(elem) for elem in aln])
+
+    return {idx for idx in range(np_aln.shape[1]) if np.where(np_aln[:, idx] == '-')[0].shape[0] >= cumulative_threshold}
+
+################################# Profile HMM ########################
+def profile_hmm(threshold, multiple_alignment):
+    indeled_cols = get_index_np(threshold, multiple_alignment)
+
+    from collections import defaultdict
+
+    def defaulter():
+        return defaultdict(int)
+
+    emission_matrix = defaultdict(defaulter)  # Separate the tuples to make it easier for pandas
+
+    states = []
+    for single_elem_idx, single_elem in enumerate(multiple_alignment):
+        single_state = []
+        idx = 1
+        for j in range(len(single_elem)):
+            if j not in indeled_cols:  # Set has O(1) retrieval
+                single_state.append('D' if multiple_alignment[single_elem_idx][j] == '-' else 'M' + str(idx))
+                idx += 1
+                if multiple_alignment[single_elem_idx][j] != '-':
+                    emission_matrix['M' + str(idx)][multiple_alignment[single_elem_idx][j]] += 1
+            elif multiple_alignment[single_elem_idx][j] != '-':  # No indel
+                single_state.append('I' + str(idx - 1))
+                emission_matrix['I' + str(idx - 1)][multiple_alignment[single_elem_idx][j]] += 1
+        states.append(single_state)
+
+    for key in emission_matrix:
+        summation = sum(emission_matrix[key].values())
+        emission_matrix[key] = {sub_key: 1.0 * emission_matrix[key][sub_key] / summation for sub_key in
+                                emission_matrix[key] if summation > 0}
+
+    transition_matrix = defaultdict(defaulter)
+    transition_matrix.update({'S': {'I0': 0, 'D1': 0, 'M1': 0}, 'I0': {'I0': 0, 'D1': 0, 'M1': 0}})
+    transition_matrix['S'] = {init_state: transition_matrix['S'][init_state] + 1 for init_state, *ignore in states}
+
+    for single_elem_idx in range(len(states)):
+        for j in range(len(states[single_elem_idx]) - 1):
+            transition_matrix[states[single_elem_idx][j]][states[single_elem_idx][j + 1]] += 1
+        transition_matrix[states[single_elem_idx][len(states[single_elem_idx]) - 1]]['E'] += 1
+
+    for key in transition_matrix:
+        total = sum(transition_matrix[key].values())
+        transition_matrix[key] = {sub_key: 1.0 * transition_matrix[key][sub_key] / total for sub_key in
+                                  transition_matrix[key] if total > 0}
+
+    index_list = ['S', 'I0'  # Initial Guaranteed States
+                  ] + [a + str(idx) for idx in range(1, len(multiple_alignment[0]) - len(indeled_cols) + 1) for
+                                a in 'MDI'] + ['E']  # Ending State
+    return emission_matrix, transition_matrix, index_list
+
+
+def print_it(emission, transition, index_list):
+    import pandas as pd
+    pd.set_option('display.width', 1000)
+    df = pd.DataFrame(transition, index=index_list, columns=index_list).fillna(0)
+    print(df.transpose().round(3), end='\n--------\n')
+
+    df = pd.DataFrame(emission, index=alphabet, columns=index_list).fillna(0)
+    print(df.transpose().round(3), end='\n--------')
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    threshold_out = float(lines[0].strip())
+    alphabet = lines[2].strip().split()
+    alignment = lines[4:]
+    em, tran, idx_ls = profile_hmm(threshold_out, alignment)
+    print_it(em, tran, idx_ls)
+def get_index_np(threshold, aln):
+    cumulative_threshold = threshold * len(aln)
+    import numpy as np
+    np_aln = np.array([list(elem) for elem in aln])
+
+    return {idx for idx in range(np_aln.shape[1]) if np.where(np_aln[:, idx] == '-')[0].shape[0] >= cumulative_threshold}
+
+
+############################## Baum Welch Learning #############################
+from BioInformatics.Week_15.forward_backward import forward_backward, get_matrix
+from BioInformatics.Week_15.viterbi_learning import convert_tuple_dict_to_dict_of_dicts, convert_dict_of_dicts_to_tuple_dict
+
+
+def distance(vec_1, vec_2):
+    ls = 0
+    for idx in range(len(vec_1)):
+        ls += (vec_1[idx] - vec_2[idx]) ** 2
+    return ls ** 0.5
+
+
+def baum_welch(states, alphabet, le_string, transition_matrix, emission_matrix):
+    from collections import defaultdict
+    # transition_matrix = {state: {state_: 1.0/len(states) for state_ in states} for state in states}
+    # emission_matrix = {state: {a: 1.0/len(states) for a in alphabet} for state in states}
+    defa = lambda:defaultdict(defaultdict)
+    prob_dict= defaultdict(defa)
+    while True:
+
+        transition_matrix = convert_dict_of_dicts_to_tuple_dict(transition_matrix)
+        emission_matrix = convert_dict_of_dicts_to_tuple_dict(emission_matrix)
+        ret = forward_backward(le_string, states, transition_matrix, emission_matrix)
+        transition_matrix = convert_tuple_dict_to_dict_of_dicts(transition_matrix)
+        emission_matrix = convert_tuple_dict_to_dict_of_dicts(emission_matrix)
+        trans_bkp, ems_bkp = transition_matrix, emission_matrix
+        for state in states:
+            for state_ in states:
+                for char in le_string:
+                    prob_dict[state][state_][char] = ret[char][state]
+        for state in states:
+            for state_ in states:
+                transition_matrix[state][state_] = sum(prob_dict[state][state_].values())
+
+        for elem in transition_matrix:
+            total = sum(transition_matrix[elem].values())
+            for elem2 in transition_matrix[elem]:
+                transition_matrix[elem][elem2] /= total
+
+        for state in states:
+            for char in le_string:
+                emission_matrix[state][char] = sum(prob_dict[state][state_])
+
+        for elem in emission_matrix:
+            total = sum(emission_matrix[elem])
+            for elem2 in emission_matrix[elem]:
+                emission_matrix[elem][elem2] /= total
+
+        if round(distance(transition_matrix, trans_bkp), 3) == round(distance(emission_matrix, ems_bkp), 3) == 0:
+            break
+
+        return transition_matrix, emission_matrix
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    num = int(lines[0])
+    le_string = lines[2]
+    le_alphabets = lines[4].split()
+    states_out = lines[6].split()
+    logger_flag = True
+    transition_matrix_out = get_matrix(lines[8:8 + (len(states_out) + 1)], logger_flag)
+    emission_matrix_out = get_matrix(lines[(8 + len(states_out) + 2):], logger_flag)
+    transition_matrix_out = convert_tuple_dict_to_dict_of_dicts(transition_matrix_out)
+    emission_matrix_out = convert_tuple_dict_to_dict_of_dicts(emission_matrix_out)
+    a, d = baum_welch(states_out, le_alphabets, le_string, transition_matrix_out, emission_matrix_out)
+    print(a, d)
+
+
+######################################Pseudo Counts profile_hmm ###################
+
+def profile_hmm_pseudo(threshold, multiple_alignment):
+    indeled_cols = get_index_np(threshold, multiple_alignment)
+
+    from collections import defaultdict
+
+    def defaulter():
+        return defaultdict(int)
+
+    emission_matrix = defaultdict(defaulter)  # Separate the tuples to make it easier for pandas
+
+    states = []
+    for single_elem_idx, single_elem in enumerate(multiple_alignment):
+        single_state = []
+        idx = 1
+        for j in range(len(single_elem)):
+            if j not in indeled_cols:  # Set has O(1) retrieval
+                single_state.append('D' if multiple_alignment[single_elem_idx][j] == '-' else 'M' + str(idx))
+                idx += 1
+                if multiple_alignment[single_elem_idx][j] != '-':
+                    emission_matrix['M' + str(idx)][multiple_alignment[single_elem_idx][j]] += 1
+            elif multiple_alignment[single_elem_idx][j] != '-':  # No indel
+                single_state.append('I' + str(idx - 1))
+                emission_matrix['I' + str(idx - 1)][multiple_alignment[single_elem_idx][j]] += 1
+        states.append(single_state)
+
+    for key in emission_matrix:
+        summation = sum(emission_matrix[key].values())
+        emission_matrix[key] = {sub_key: 1.0 * emission_matrix[key][sub_key] / summation for sub_key in
+                                emission_matrix[key] if summation > 0}
+
+    transition_matrix = defaultdict(defaulter)
+    transition_matrix.update({'S': {'I0': 0, 'D1': 0, 'M1': 0}, 'I0': {'I0': 0, 'D1': 0, 'M1': 0}})
+    transition_matrix['S'] = {init_state: transition_matrix['S'][init_state] + 1 for init_state, *ignore in states}
+
+    for single_elem_idx in range(len(states)):
+        for j in range(len(states[single_elem_idx]) - 1):
+            transition_matrix[states[single_elem_idx][j]][states[single_elem_idx][j + 1]] += 1
+        transition_matrix[states[single_elem_idx][len(states[single_elem_idx]) - 1]]['E'] += 1
+
+    for key in transition_matrix:
+        total = sum(transition_matrix[key].values())
+        transition_matrix[key] = {sub_key: 1.0 * transition_matrix[key][sub_key] / total for sub_key in
+                                  transition_matrix[key] if total > 0}
+
+    index_list = ['S', 'I0'  # Initial Guaranteed States
+                  ] + [a + str(idx) for idx in range(1, len(multiple_alignment[0]) - len(indeled_cols) + 1) for
+                                a in 'MDI'] + ['E']  # Ending State
+    return emission_matrix, transition_matrix, index_list
+
+
+def print_it(emission, transition, index_list):
+    import pandas as pd
+    pd.set_option('display.width', 1000)
+    df = pd.DataFrame(transition, index=index_list, columns=index_list).fillna(0)
+    print(df.transpose().round(3), end='\n--------\n')
+
+    df = pd.DataFrame(emission, index=alphabet, columns=index_list).fillna(0)
+    print(df.transpose().round(3), end='\n--------')
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    threshold_out = float(lines[0].strip())
+    alphabet = lines[2].strip().split()
+    alignment = lines[4:]
+    em, tran, idx_ls = profile_hmm_pseudo(threshold_out, alignment)
+    print_it(em, tran, idx_ls)
+
+################################Viterbi Learning########################
+from BioInformatics.Week_14.viterbi_algo import viterbi_algorithm, get_matrix, backtrack_viterbi
+from BioInformatics.Week_15.param_estimation import param_estimation
+
+
+def convert_tuple_dict_to_dict_of_dicts(matrix):
+    import pandas as pd
+    idx = pd.MultiIndex.from_tuples(matrix.keys())
+    matrix = (pd.DataFrame(list(matrix.values()), index=idx, columns=['Score'])
+              .unstack(fill_value=0)['Score'].to_dict())
+    return matrix
+
+
+def convert_dict_of_dicts_to_tuple_dict(dict_of_dicts):
+    import pandas as pd
+    df = pd.DataFrame(dict_of_dicts)
+    return {(col, idx): df[col][idx] for col in df.columns.values for idx in df.index.values}
+
+
+if __name__ == '__main__':
+    file = open('test')
+    lines = file.read().splitlines()
+    num = int(lines[0])
+    le_string = lines[2]
+    le_alphabets = lines[4].split()
+    states_out = lines[6].split()
+    logger_flag = True
+    transition_matrix_out = get_matrix(lines[8:8 + (len(states_out) + 1)], logger_flag)
+    emission_matrix_out = get_matrix(lines[(8 + len(states_out) + 2):], logger_flag)
+    print(transition_matrix_out, emission_matrix_out)
+    # transition_matrix_out_ = convert_tuple_dict_to_dict_of_dicts(transition_matrix_out)
+    # emission_matrix_out_ = convert_tuple_dict_to_dict_of_dicts(emission_matrix_out)
+
+    import pandas as pd
+    for idx in range(1, num+1):
+        path = backtrack_viterbi(viterbi_algorithm(le_string, states_out, transition_matrix_out, emission_matrix_out))
+        transition_matrix_out, emission_matrix_out = param_estimation(states_out, le_alphabets, le_string, path)
+        transition_matrix_out = convert_dict_of_dicts_to_tuple_dict(transition_matrix_out)
+        emission_matrix_out = convert_dict_of_dicts_to_tuple_dict(emission_matrix_out)
+
+
+    # print(transition_matrix_out)
+    # print(emission_matrix_out)
+    transition_matrix_out = convert_tuple_dict_to_dict_of_dicts(transition_matrix_out)
+    emission_matrix_out = convert_tuple_dict_to_dict_of_dicts(emission_matrix_out)
+    print(pd.DataFrame(transition_matrix_out).round(3))
+    print(pd.DataFrame(emission_matrix_out).round(3))

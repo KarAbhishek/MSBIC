@@ -1,12 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="189d8692-6efb-4136-829b-df667b294a8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_6/data/BLOSUM62.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_6/data/global_alignment_data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_6/petri_dish.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_6/q_6_2_2.py" />
+    <list default="true" id="99968cdb-b599-48e8-940c-446b217cc6bb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/DME/_DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0002.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0003.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0007.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0008.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0011.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/0021.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/Normal/_DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/VOME/0019.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/VOME/_DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0005.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0006.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0009.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0010.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0015.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0016.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/0017.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/dryAMD/_DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/nAMD/0004.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/nAMD/0013.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/nAMD/0014.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/nAMD/0018.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/tensorflow/flower_photos/nAMD/_DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/drive-download-20170614T195129Z-001.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/data/iris_test_data.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/data/iris_test_label.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/data/iris_train.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/data/train.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/init_K_Nearest_Neighbours.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/mr_job_trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/my_file.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/random_forests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Big_data_practice/spark.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/BinPacking.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week4/scoring.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week6/data/BLOSUM62.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week6/data/global_alignment_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week6/q_6_2_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week7/find_cycles.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week7/two_break_sort.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week7/two_break_sorting.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/complete_new.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/new_trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/newer_trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/spectral_dict_size.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/spectrum.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week8/trial_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/additive_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/additive_phylogeny.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/additive_phylogeny_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/dist_leaves.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/distance.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/limb.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/limb_length.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/manhattan_reuse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/problem_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/problem_1_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/trail_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/trial_3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/upgma.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/upgma_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week9/upgma_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_10/neighbor_join_data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_10/small_parsimony.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_10/trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/EM.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/EM_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/distor.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/farthest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/farthest_first.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_11/lloyd_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trailito.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trial_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trie_trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/longest_repeat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/match.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/modified_suffix_trie_conversion.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/pseudo_prefix_trie_matching.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/suff_tree_construction.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/trie.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/working_prefix_trie_match.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/working_suffix_tree_construction.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_12/working_trie.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/approx_match.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_trial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/multiple_pattern_match_modified.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/multiple_pattern_matching.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_13/quiz_3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_14/viterbi_trail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/Week_15/viterbi_learning.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/data/data_6_2_2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BioInformatics/sample.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/LinReg.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/LogReg.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/Old/LinReg.py" />
@@ -20,8 +112,89 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/data/LogReg_yTest.csv" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/data/LogReg_yTrain.csv" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Machine_Learning_10_601/execution_control.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/LRU_Cache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/ListNode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/maxSubArray_BruteForce.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/remove_vowels.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Udacity/1_notmnist.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Udacity/1_notmnist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/storage1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/Recommender_Systems/unigram_co_occurence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/items.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/pipelines.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/scrapy_indeed.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/spiders/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/indeed/spiders/ds_job.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/talencea/indeedScraping-master/scrapy.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/approx_pattern_match.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/scoring.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/storage.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Better_Clump_Finding.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Better_Clump_Finding.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Entropy_calc.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Entropy_calc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Frequent_Words.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Frequent_Words.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Frequent_Words_By_Sorting.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Frequent_Words_By_Sorting.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Frequent_Words_Requiem.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Frequent_Words_Requiem.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Hamming_Distance.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Hamming_Distance.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/Pattern_Count.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/Pattern_Count.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/True_Ori_finder.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/True_Ori_finder.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/minSkewTest.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/minSkewTest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 1/probabilities_of_pattern.py" afterPath="$PROJECT_DIR$/BioInformatics/Week1/probabilities_of_pattern.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/create_profile.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/create_profile.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/distance.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/distance.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/gibbs_sampler_motif_search.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/gibbs_sampler_motif_search.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/greedy" afterPath="$PROJECT_DIR$/BioInformatics/Week2/greedy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/greedy_motif_search.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/greedy_motif_search.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/median_string.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/median_string.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/motif_enumeration.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/motif_enumeration.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/profile.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/profile.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/pseudo_count.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/pseudo_count.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 2/random_motif_search.py" afterPath="$PROJECT_DIR$/BioInformatics/Week2/random_motif_search.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/3_3.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/3_3.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/de_brujin_graph.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/de_brujin_graph.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/euler_cycle.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/euler_cycle.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/euler_path.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/euler_path.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/k_mer_sets.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/k_mer_sets.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/maximal_non_branching_paths.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/maximal_non_branching_paths.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/newfile.txt" afterPath="$PROJECT_DIR$/BioInformatics/Week3/newfile.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/paired_composition.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/paired_composition.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_composition.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_composition.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_reconstruction.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_from_read_pairs.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_reconstruction_from_read_pairs.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_iterative.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_reconstruction_iterative.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_iterative_with_repeat.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_reconstruction_iterative_with_repeat.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_orig.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/string_reconstruction_orig.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week 3/universal_string_problem.py" afterPath="$PROJECT_DIR$/BioInformatics/Week3/universal_string_problem.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/4_5_1.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/4_5_1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/Week_4_Merged_code_file.txt" afterPath="$PROJECT_DIR$/BioInformatics/Week4/Week_4_Merged_code_file.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/c4_11_2_cyclic.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/c4_11_2_cyclic.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/c4_11_2_linear.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/c4_11_2_linear.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/q4_4_3.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/q4_4_3.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/q4_4_4.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/q4_4_4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/q4_6_6.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/q4_7_7.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/q4_7_7.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_4/trialito.py" afterPath="$PROJECT_DIR$/BioInformatics/Week4/trialito.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/DAG" afterPath="$PROJECT_DIR$/BioInformatics/Week5/DAG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py" afterPath="$PROJECT_DIR$/BioInformatics/Week5/Dp_change.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py" afterPath="$PROJECT_DIR$/BioInformatics/Week5/Topo_sort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/man_hat_data" afterPath="$PROJECT_DIR$/BioInformatics/Week5/man_hat_data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/topo_sort_data" afterPath="$PROJECT_DIR$/BioInformatics/Week5/topo_sort_data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/weighted.py" afterPath="$PROJECT_DIR$/BioInformatics/Week5/weighted.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/hello.pdf" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/hello.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MSBIC.iml" afterPath="$PROJECT_DIR$/.idea/MSBIC.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/karab.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/karab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BioInformatics/Week_5/weighted.py" afterPath="$PROJECT_DIR$/BioInformatics/Week_5/weighted.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Big_data_practice/K_Nearest_Neighbours.py" afterPath="$PROJECT_DIR$/Big_data_practice/K_Nearest_Neighbours.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/client_secret.json" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/client_secret.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/google_drive_rest_api.py" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/google_drive_rest_api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/quickstart.py" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish/quickstart.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Selenium_Trial.py" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Selenium_Trial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talencea/Base html renderer/Skills_Grabber.py" afterPath="$PROJECT_DIR$/talencea/Base html renderer/Skills_Grabber.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,101 +205,112 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MSBIC$string_spelled_by_genome_path.coverage" NAME="string_spelled_by_genome_path Coverage Results" MODIFIED="1486171858886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$weighted.coverage" NAME="weighted Coverage Results" MODIFIED="1488084529345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_5" />
-    <SUITE FILE_PATH="coverage/MSBIC$IndeedScraper.coverage" NAME="IndeedScraper Coverage Results" MODIFIED="1484183184008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IndeedScraper/New Indeed Scraper" />
-    <SUITE FILE_PATH="coverage/MSBIC$euler_cycle.coverage" NAME="euler_cycle Coverage Results" MODIFIED="1486182759654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$gecko_driver_trial.coverage" NAME="gecko_driver_trial Coverage Results" MODIFIED="1485510056398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_random.coverage" NAME="borrowed_random Coverage Results" MODIFIED="1485605500870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$probabilities_of_pattern.coverage" NAME="probabilities_of_pattern Coverage Results" MODIFIED="1485045722986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$trialito.coverage" NAME="trialito Coverage Results" MODIFIED="1486867940433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$html_to_text.coverage" NAME="html_to_text Coverage Results" MODIFIED="1484566352161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_score.coverage" NAME="borrowed_score Coverage Results" MODIFIED="1486810519729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$k_mer_sets__1_.coverage" NAME="k_mer_sets (1) Coverage Results" MODIFIED="1486076661099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$motif_enumeration.coverage" NAME="motif_enumeration Coverage Results" MODIFIED="1485391395563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Hamming_Distance.coverage" NAME="Hamming_Distance Coverage Results" MODIFIED="1484956607706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_reconstruction_iterative.coverage" NAME="string_reconstruction_iterative Coverage Results" MODIFIED="1485675556197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$profile.coverage" NAME="profile Coverage Results" MODIFIED="1485586890099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$LinReg.coverage" NAME="LinReg Coverage Results" MODIFIED="1487714470433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/10_601_Machine_Learning" />
-    <SUITE FILE_PATH="coverage/MSBIC$Entropy_calc.coverage" NAME="Entropy_calc Coverage Results" MODIFIED="1485220781818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer/Petri_Dish" />
-    <SUITE FILE_PATH="coverage/MSBIC$trial_2.coverage" NAME="trial_2 Coverage Results" MODIFIED="1486779744887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_4" />
-    <SUITE FILE_PATH="coverage/MSBIC$c4_11_2_linear.coverage" NAME="c4_11_2_linear Coverage Results" MODIFIED="1486780458953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Minjis_Code_greedy.coverage" NAME="Minjis_Code_greedy Coverage Results" MODIFIED="1485756952680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week 2" />
-    <SUITE FILE_PATH="coverage/MSBIC$trial.coverage" NAME="trial Coverage Results" MODIFIED="1486772537957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week 4" />
-    <SUITE FILE_PATH="coverage/MSBIC$c4_11_2_cyclic__1_.coverage" NAME="c4_11_2_cyclic (1) Coverage Results" MODIFIED="1486798767690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_4" />
-    <SUITE FILE_PATH="coverage/MSBIC$q4_4_3.coverage" NAME="q4_4_3 Coverage Results" MODIFIED="1486765508258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_composition.coverage" NAME="string_composition Coverage Results" MODIFIED="1486203444197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_reconstruction_orig.coverage" NAME="string_reconstruction_orig Coverage Results" MODIFIED="1486200574424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$maximal_non_branching_paths.coverage" NAME="maximal_non_branching_paths Coverage Results" MODIFIED="1486354143804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$universal_string_problem.coverage" NAME="universal_string_problem Coverage Results" MODIFIED="1486205049659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$q_6_2_2.coverage" NAME="q_6_2_2 Coverage Results" MODIFIED="1488087400811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_6" />
-    <SUITE FILE_PATH="coverage/MSBIC$Frequent_Words_By_Sorting.coverage" NAME="Frequent_Words_By_Sorting Coverage Results" MODIFIED="1484795271543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$paired_composition.coverage" NAME="paired_composition Coverage Results" MODIFIED="1486229361878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$4_2.coverage" NAME="4_2 Coverage Results" MODIFIED="1486623467039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Template.coverage" NAME="Template Coverage Results" MODIFIED="1486674005479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Borrowed_Leader.coverage" NAME="Borrowed_Leader Coverage Results" MODIFIED="1486866667632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$trial__1_.coverage" NAME="trial (1) Coverage Results" MODIFIED="1486778916619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_4" />
-    <SUITE FILE_PATH="coverage/MSBIC$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1484966028466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer/Petri_Dish" />
-    <SUITE FILE_PATH="coverage/MSBIC$pseudo_count.coverage" NAME="pseudo_count Coverage Results" MODIFIED="1485611487798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Better_Clump_Finding.coverage" NAME="Better_Clump_Finding Coverage Results" MODIFIED="1484860365235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Google_Drive.coverage" NAME="Google_Drive Coverage Results" MODIFIED="1484956614959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer/Petri_Dish" />
-    <SUITE FILE_PATH="coverage/MSBIC$q4_4_4.coverage" NAME="q4_4_4 Coverage Results" MODIFIED="1486781031097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_4" />
-    <SUITE FILE_PATH="coverage/MSBIC$c4_11_2_cyclic.coverage" NAME="c4_11_2_cyclic Coverage Results" MODIFIED="1486782055074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_reconstruction_from_read_pairs.coverage" NAME="string_reconstruction_from_read_pairs Coverage Results" MODIFIED="1486351737129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$k_mer_sets.coverage" NAME="k_mer_sets Coverage Results" MODIFIED="1486172069456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$File.coverage" NAME="File Coverage Results" MODIFIED="1484087961308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1486867178863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$LinReg__1_.coverage" NAME="LinReg (1) Coverage Results" MODIFIED="1487761777108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine_Learning_10_601" />
-    <SUITE FILE_PATH="coverage/MSBIC$Media_Wiki_Trial.coverage" NAME="Media_Wiki_Trial Coverage Results" MODIFIED="1484686507301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$q4_6_6.coverage" NAME="q4_6_6 Coverage Results" MODIFIED="1486951426710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_4" />
-    <SUITE FILE_PATH="coverage/MSBIC$NB.coverage" NAME="NB Coverage Results" MODIFIED="1487002924300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine_Learning_10601/python" />
-    <SUITE FILE_PATH="coverage/MSBIC$Google_Drive__1_.coverage" NAME="Google_Drive (1) Coverage Results" MODIFIED="1484966194228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer/Petri_Dish" />
-    <SUITE FILE_PATH="coverage/MSBIC$random_motif_search.coverage" NAME="random_motif_search Coverage Results" MODIFIED="1485612156479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$approx_pattern_match.coverage" NAME="approx_pattern_match Coverage Results" MODIFIED="1484798063487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$3_3.coverage" NAME="3_3 Coverage Results" MODIFIED="1486009852453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week 1" />
-    <SUITE FILE_PATH="coverage/MSBIC$de_brujin_graph__1_.coverage" NAME="de_brujin_graph (1) Coverage Results" MODIFIED="1486171983676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$c4_11_2.coverage" NAME="c4_11_2 Coverage Results" MODIFIED="1486691274448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$scoring.coverage" NAME="scoring Coverage Results" MODIFIED="1486866596747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$new_try.coverage" NAME="new_try Coverage Results" MODIFIED="1485511153783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$hw2_script.coverage" NAME="hw2_script Coverage Results" MODIFIED="1487014607692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine_Learning_10601/python" />
-    <SUITE FILE_PATH="coverage/MSBIC$N50.coverage" NAME="N50 Coverage Results" MODIFIED="1487559776953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_reconstruction.coverage" NAME="string_reconstruction Coverage Results" MODIFIED="1485674834545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$K_Nearest_Neighbours.coverage" NAME="K_Nearest_Neighbours Coverage Results" MODIFIED="1486879125563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine_Learning_10601" />
-    <SUITE FILE_PATH="coverage/MSBIC$google_drive_rest_api.coverage" NAME="google_drive_rest_api Coverage Results" MODIFIED="1485043916013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer/Petri_Dish" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_string_recon_code.coverage" NAME="borrowed_string_recon_code Coverage Results" MODIFIED="1486205454092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_greedy_search.coverage" NAME="borrowed_greedy_search Coverage Results" MODIFIED="1485577308063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$median_string.coverage" NAME="median_string Coverage Results" MODIFIED="1485565586897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$distance.coverage" NAME="distance Coverage Results" MODIFIED="1485586623672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_contig_gen.coverage" NAME="borrowed_contig_gen Coverage Results" MODIFIED="1486244234027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$euler_path.coverage" NAME="euler_path Coverage Results" MODIFIED="1486200080024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$q4_4_4_pseudo_code.coverage" NAME="q4_4_4_pseudo_code Coverage Results" MODIFIED="1486691162783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Topo_sort.coverage" NAME="Topo_sort Coverage Results" MODIFIED="1487545789160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_5" />
-    <SUITE FILE_PATH="coverage/MSBIC$de_brujin_graph.coverage" NAME="de_brujin_graph Coverage Results" MODIFIED="1486068287403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week 1" />
-    <SUITE FILE_PATH="coverage/MSBIC$3_3__1_.coverage" NAME="3_3 (1) Coverage Results" MODIFIED="1486072285643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$NG50.coverage" NAME="NG50 Coverage Results" MODIFIED="1487465334616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II" />
-    <SUITE FILE_PATH="coverage/MSBIC$Pattern_Count.coverage" NAME="Pattern_Count Coverage Results" MODIFIED="1484795892143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$create_profile.coverage" NAME="create_profile Coverage Results" MODIFIED="1485570354752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$minSkewTest.coverage" NAME="minSkewTest Coverage Results" MODIFIED="1484797122881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Selenium_Trial.coverage" NAME="Selenium_Trial Coverage Results" MODIFIED="1484599625649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_pair_reconstrcution.coverage" NAME="borrowed_pair_reconstrcution Coverage Results" MODIFIED="1486232605269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$another_borrowed_contig_gen.coverage" NAME="another_borrowed_contig_gen Coverage Results" MODIFIED="1486245980494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$eulerian_path.coverage" NAME="eulerian_path Coverage Results" MODIFIED="1486171512169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$borrowed_eulerian_path.coverage" NAME="borrowed_eulerian_path Coverage Results" MODIFIED="1486166873486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$gibbs_sampler_motif_search.coverage" NAME="gibbs_sampler_motif_search Coverage Results" MODIFIED="1485659329136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$string_reconstruction_iterative_with_repeat.coverage" NAME="string_reconstruction_iterative_with_repeat Coverage Results" MODIFIED="1485755176974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$eulerian_cycle.coverage" NAME="eulerian_cycle Coverage Results" MODIFIED="1486164019547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$copy_of__euler_cycle.coverage" NAME="copy_of__euler_cycle Coverage Results" MODIFIED="1486195320626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Skills_Grabber.coverage" NAME="Skills_Grabber Coverage Results" MODIFIED="1484563600282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$NGA50.coverage" NAME="NGA50 Coverage Results" MODIFIED="1487465604667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II" />
-    <SUITE FILE_PATH="coverage/MSBIC$Dp_change.coverage" NAME="Dp_change Coverage Results" MODIFIED="1488090454781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_5" />
-    <SUITE FILE_PATH="coverage/MSBIC$True_Ori_finder.coverage" NAME="True_Ori_finder Coverage Results" MODIFIED="1485130630068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$indeed_api.coverage" NAME="indeed_api Coverage Results" MODIFIED="1484166661651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IndeedScraper" />
-    <SUITE FILE_PATH="coverage/MSBIC$Borrowed_cycl_seq.coverage" NAME="Borrowed_cycl_seq Coverage Results" MODIFIED="1486859214461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
-    <SUITE FILE_PATH="coverage/MSBIC$Bing_Search.coverage" NAME="Bing_Search Coverage Results" MODIFIED="1484296141388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Base html renderer" />
-    <SUITE FILE_PATH="coverage/MSBIC$greedy_motif_search.coverage" NAME="greedy_motif_search Coverage Results" MODIFIED="1485756544633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week 2" />
+    <SUITE FILE_PATH="coverage/MSBIC$two_sum.coverage" NAME="two_sum Coverage Results" MODIFIED="1497024251011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$prof_hmm_pseudo.coverage" NAME="prof_hmm_pseudo Coverage Results" MODIFIED="1494797302180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$BinPacking.coverage" NAME="BinPacking Coverage Results" MODIFIED="1490907549959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
+    <SUITE FILE_PATH="coverage/MSBIC$manhattan_reuse.coverage" NAME="manhattan_reuse Coverage Results" MODIFIED="1490522192564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$multiple_pattern_match_modified.coverage" NAME="multiple_pattern_match_modified Coverage Results" MODIFIED="1493608617204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$sample.coverage" NAME="sample Coverage Results" MODIFIED="1490909244306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics" />
+    <SUITE FILE_PATH="coverage/MSBIC$outcome_probability.coverage" NAME="outcome_probability Coverage Results" MODIFIED="1494738910095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$apport_python_hook.coverage" NAME="apport_python_hook Coverage Results" MODIFIED="1492653129681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/lib/python3/dist-packages" />
+    <SUITE FILE_PATH="coverage/MSBIC$hidden_path.coverage" NAME="hidden_path Coverage Results" MODIFIED="1494209106820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$maxSubArray.coverage" NAME="maxSubArray Coverage Results" MODIFIED="1497404735527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$trie_trial.coverage" NAME="trie_trial Coverage Results" MODIFIED="1492392519973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$rotate_matrix.coverage" NAME="rotate_matrix Coverage Results" MODIFIED="1497137245266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$bw_matching_trial.coverage" NAME="bw_matching_trial Coverage Results" MODIFIED="1494053334153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$mergeSort.coverage" NAME="mergeSort Coverage Results" MODIFIED="1497826216491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$relative_ranks.coverage" NAME="relative_ranks Coverage Results" MODIFIED="1496860880130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$nearest_neighbor_long_parsi.coverage" NAME="nearest_neighbor_long_parsi Coverage Results" MODIFIED="1491789495809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_10" />
+    <SUITE FILE_PATH="coverage/MSBIC$bw_matching_faster_ur_way.coverage" NAME="bw_matching_faster_ur_way Coverage Results" MODIFIED="1493605069112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$viterbi_trail.coverage" NAME="viterbi_trail Coverage Results" MODIFIED="1494755711671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_seq_align.coverage" NAME="borrowed_seq_align Coverage Results" MODIFIED="1494820093984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$Trie_Construction.coverage" NAME="Trie_Construction Coverage Results" MODIFIED="1495532074169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$linked_lists.coverage" NAME="linked_lists Coverage Results" MODIFIED="1496100479581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$reverse_second_half_of_linked_list.coverage" NAME="reverse_second_half_of_linked_list Coverage Results" MODIFIED="1497016317609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$windowSum.coverage" NAME="windowSum Coverage Results" MODIFIED="1497038230463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$windowMin.coverage" NAME="windowMin Coverage Results" MODIFIED="1497039618315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$modified_suffix_trie_conversion.coverage" NAME="modified_suffix_trie_conversion Coverage Results" MODIFIED="1492713569276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$trial.coverage" NAME="trial Coverage Results" MODIFIED="1496358111073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$unigram_co_occurence.coverage" NAME="unigram_co_occurence Coverage Results" MODIFIED="1490739112211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/talencea/Recommender_Systems" />
+    <SUITE FILE_PATH="coverage/MSBIC$forward_backward.coverage" NAME="forward_backward Coverage Results" MODIFIED="1494818275122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$working_trie.coverage" NAME="working_trie Coverage Results" MODIFIED="1492665104551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_viterbi.coverage" NAME="borrowed_viterbi Coverage Results" MODIFIED="1494211716889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$trie.coverage" NAME="trie Coverage Results" MODIFIED="1492656771881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$image_classifier.coverage" NAME="image_classifier Coverage Results" MODIFIED="1497532669537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/tensorflow" />
+    <SUITE FILE_PATH="coverage/MSBIC$trail_1.coverage" NAME="trail_1 Coverage Results" MODIFIED="1490516335004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$bit_manipulation.coverage" NAME="bit_manipulation Coverage Results" MODIFIED="1496340699379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$trie_again.coverage" NAME="trie_again Coverage Results" MODIFIED="1496268756265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$suffix_arrays.coverage" NAME="suffix_arrays Coverage Results" MODIFIED="1493606870708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$Edge_detection.coverage" NAME="Edge_detection Coverage Results" MODIFIED="1497471892927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/talencea" />
+    <SUITE FILE_PATH="coverage/MSBIC$prefix_trie_matching.coverage" NAME="prefix_trie_matching Coverage Results" MODIFIED="1492669083765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$EM.coverage" NAME="EM Coverage Results" MODIFIED="1492389811488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_11" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_param_estimation.coverage" NAME="borrowed_param_estimation Coverage Results" MODIFIED="1494798174190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$maxSubArray_n_2.coverage" NAME="maxSubArray_n^2 Coverage Results" MODIFIED="1497403247623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$universal_string_problem.coverage" NAME="universal_string_problem Coverage Results" MODIFIED="1496340760715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week3" />
+    <SUITE FILE_PATH="coverage/MSBIC$trial_3.coverage" NAME="trial_3 Coverage Results" MODIFIED="1491104714606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$two_break_dist.coverage" NAME="two_break_dist Coverage Results" MODIFIED="1491384775776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week7" />
+    <SUITE FILE_PATH="coverage/MSBIC$problem_1.coverage" NAME="problem_1 Coverage Results" MODIFIED="1491148311985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_viterbi_working.coverage" NAME="borrowed_viterbi_working Coverage Results" MODIFIED="1494208993550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$suff_tree_construction.coverage" NAME="suff_tree_construction Coverage Results" MODIFIED="1492644552795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$util.coverage" NAME="util Coverage Results" MODIFIED="1491021913349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MSBIC$upgma_1.coverage" NAME="upgma_1 Coverage Results" MODIFIED="1492138490598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_11" />
+    <SUITE FILE_PATH="coverage/MSBIC$trailito.coverage" NAME="trailito Coverage Results" MODIFIED="1492661146977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$farthest_first.coverage" NAME="farthest_first Coverage Results" MODIFIED="1492142112631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_11" />
+    <SUITE FILE_PATH="coverage/MSBIC$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1490595627897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish" />
+    <SUITE FILE_PATH="coverage/MSBIC$spectrum.coverage" NAME="spectrum Coverage Results" MODIFIED="1490486791018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_8" />
+    <SUITE FILE_PATH="coverage/MSBIC$inverse_BWT.coverage" NAME="inverse_BWT Coverage Results" MODIFIED="1493007057829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$wheeler_burrows.coverage" NAME="wheeler_burrows Coverage Results" MODIFIED="1493607585824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$longest_palindromic_substring.coverage" NAME="longest_palindromic_substring Coverage Results" MODIFIED="1496940303017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$distortion.coverage" NAME="distortion Coverage Results" MODIFIED="1492206675652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_11" />
+    <SUITE FILE_PATH="coverage/MSBIC$quiz_3.coverage" NAME="quiz_3 Coverage Results" MODIFIED="1492477594136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$baum_welch_trial.coverage" NAME="baum_welch_trial Coverage Results" MODIFIED="1494819029204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$remove_vowels.coverage" NAME="remove_vowels Coverage Results" MODIFIED="1496939946701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$neigh_join.coverage" NAME="neigh_join Coverage Results" MODIFIED="1491442783946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_10" />
+    <SUITE FILE_PATH="coverage/MSBIC$maxBST.coverage" NAME="maxBST Coverage Results" MODIFIED="1497901253512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$additive_phylogeny_1__1_.coverage" NAME="additive_phylogeny_1 (1) Coverage Results" MODIFIED="1491194604750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week9" />
+    <SUITE FILE_PATH="coverage/MSBIC$test.coverage" NAME="test Coverage Results" MODIFIED="1497507493734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/tensorflow" />
+    <SUITE FILE_PATH="coverage/MSBIC$approx_pattern_match.coverage" NAME="approx_pattern_match Coverage Results" MODIFIED="1493598460709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week1" />
+    <SUITE FILE_PATH="coverage/MSBIC$retrain.coverage" NAME="retrain Coverage Results" MODIFIED="1497535565666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/tensorflow" />
+    <SUITE FILE_PATH="coverage/MSBIC$multiple_pattern_matching.coverage" NAME="multiple_pattern_matching Coverage Results" MODIFIED="1493598400425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_viterbi_learning.coverage" NAME="borrowed_viterbi_learning Coverage Results" MODIFIED="1494808386132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$minPathSum.coverage" NAME="minPathSum Coverage Results" MODIFIED="1497143579508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$isSubTree.coverage" NAME="isSubTree Coverage Results" MODIFIED="1497016686739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_prof_hmm.coverage" NAME="borrowed_prof_hmm Coverage Results" MODIFIED="1494796972573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$quickSort.coverage" NAME="quickSort Coverage Results" MODIFIED="1497826674213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$additive_phylogeny_1.coverage" NAME="additive_phylogeny_1 Coverage Results" MODIFIED="1491181716966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$borrowed_dist.coverage" NAME="borrowed_dist Coverage Results" MODIFIED="1490567498732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$google_drive_rest_api.coverage" NAME="google_drive_rest_api Coverage Results" MODIFIED="1490438918830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/talencea/Base html renderer/Petri_Dish" />
+    <SUITE FILE_PATH="coverage/MSBIC$limb_length.coverage" NAME="limb_length Coverage Results" MODIFIED="1490560995414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$hamm_dist.coverage" NAME="hamm_dist Coverage Results" MODIFIED="1496864922781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$b_nary_.coverage" NAME="b_nary_ Coverage Results" MODIFIED="1497400421590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$distance.coverage" NAME="distance Coverage Results" MODIFIED="1490508602170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_9" />
+    <SUITE FILE_PATH="coverage/MSBIC$gray_code.coverage" NAME="gray_code Coverage Results" MODIFIED="1496938683740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$likelihood.coverage" NAME="likelihood Coverage Results" MODIFIED="1494689689348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$ListNode.coverage" NAME="ListNode Coverage Results" MODIFIED="1497904612764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$param_estimation.coverage" NAME="param_estimation Coverage Results" MODIFIED="1494808248871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_15" />
+    <SUITE FILE_PATH="coverage/MSBIC$viterbi_algo.coverage" NAME="viterbi_algo Coverage Results" MODIFIED="1494212195271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_14" />
+    <SUITE FILE_PATH="coverage/MSBIC$b_nary_altered.coverage" NAME="b_nary_altered Coverage Results" MODIFIED="1497400643509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$bw_matching_ur_way.coverage" NAME="bw_matching_ur_way Coverage Results" MODIFIED="1493608725281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_13" />
+    <SUITE FILE_PATH="coverage/MSBIC$Selenium_Trial.coverage" NAME="Selenium_Trial Coverage Results" MODIFIED="1490769869836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/talencea/Base html renderer" />
+    <SUITE FILE_PATH="coverage/MSBIC$trial_suffix_tree_construction.coverage" NAME="trial_suffix_tree_construction Coverage Results" MODIFIED="1492932765790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$small_parsimony.coverage" NAME="small_parsimony Coverage Results" MODIFIED="1491449972929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_10" />
+    <SUITE FILE_PATH="coverage/MSBIC$maxSubArr.coverage" NAME="maxSubArr Coverage Results" MODIFIED="1497401324382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$LRU_Cache.coverage" NAME="LRU_Cache Coverage Results" MODIFIED="1497127614784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$working_prefix_trie_match.coverage" NAME="working_prefix_trie_match Coverage Results" MODIFIED="1492712585741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
+    <SUITE FILE_PATH="coverage/MSBIC$Dp_change.coverage" NAME="Dp_change Coverage Results" MODIFIED="1492401118927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week5" />
+    <SUITE FILE_PATH="coverage/MSBIC$maxSlidingWindow.coverage" NAME="maxSlidingWindow Coverage Results" MODIFIED="1497036966681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/MSBIC$trial_1.coverage" NAME="trial_1 Coverage Results" MODIFIED="1492582760961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BioInformatics/Week_12" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -134,31 +318,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="q_6_2_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/q_6_2_2.py">
+      <file leaf-file-name="quick_select.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/quick_select.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="18" column="146" lean-forward="false" selection-start-line="18" selection-start-column="146" selection-end-line="18" selection-end-column="146" />
+            <state relative-caret-position="475">
+              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dp_change.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py">
+      <file leaf-file-name="quick_select_dos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/quick_select_dos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+            <state relative-caret-position="475">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="petri_dish.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/petri_dish.py">
+      <file leaf-file-name="maxBST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/maxBST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="112" column="45" lean-forward="false" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
+            <state relative-caret-position="300">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="floorKey.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/floorKey.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mergeSort.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Practice/mergeSort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListNode.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Practice/ListNode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="98" column="32" lean-forward="false" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -169,52 +383,63 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1578</find>
-      <find>1587</find>
-      <find>550</find>
-      <find>44</find>
-      <find>1035</find>
-      <find>89</find>
-      <find>if not</find>
-      <find>591</find>
-      <find>try</find>
-      <find>.appe</find>
-      <find>reduce</find>
-      <find>flatten</find>
-      <find>c</find>
-      <find>inde</find>
-      <find>dadj</find>
-      <find />
-      <find>reverse_com</find>
-      <find>reverse</find>
-      <find>complement</find>
-      <find>mass(</find>
-      <find>file</find>
-      <find>++;</find>
-      <find>cyclo_spectrum</find>
+      <find>traverse(</find>
+      <find>ret</find>
+      <find>id_gen</find>
+      <find>tree</find>
       <find>print</find>
-      <find>            </find>
-      <find>hasElement</find>
-      <find>currTally[0]</find>
-      <find>unfor</find>
-      <find>update</find>
-      <find>len</find>
+      <find>HEre</find>
+      <find>←</find>
+      <find>|Text|</find>
+      <find>len(Text)</find>
+      <find>occurence</find>
+      <find>TTCTATCGCCGTGTG</find>
+      <find>app</find>
+      <find>sink</find>
+      <find>state</find>
+      <find>last</find>
+      <find>i</find>
+      <find>zoomba</find>
+      <find>end=''</find>
+      <find>end=' '</find>
+      <find>print (.*),</find>
+      <find>seq_al</find>
+      <find>print (.*)</find>
+      <find>!= None</find>
+      <find>n</find>
+      <find>-&gt;</find>
+      <find>urllib</find>
+      <find>_</find>
+      <find>ags</find>
+      <find>nnnnnnn</find>
+      <find>folder has</find>
     </findStrings>
     <replaceStrings>
-      <replace>ls.append</replace>
-      <replace>range</replace>
-      <replace>', '</replace>
-      <replace>',\n'</replace>
-      <replace>+= 1</replace>
-      <replace>   </replace>
-      <replace>\n</replace>
+      <replace />
+      <replace>adjacency_list</replace>
+      <replace>print(</replace>
+      <replace>dist_mat_star</replace>
+      <replace># print</replace>
+      <replace>=</replace>
+      <replace>len(Text)</replace>
+      <replace>&lt;=</replace>
+      <replace>occurrence</replace>
+      <replace>placeholder</replace>
+      <replace>state</replace>
+      <replace>idx</replace>
+      <replace>end=' '</replace>
+      <replace>end='\t'</replace>
+      <replace>print\($1\, end=' ')</replace>
+      <replace>print\($1\)</replace>
+      <replace>is not None</replace>
+      <replace>n-1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -223,57 +448,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/trial.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/trial_2.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/q4_4_4.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/c4_11_2_linear.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/c4_11_2_cyclic.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/q4_6_6.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/4_5_1.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/q4_2_4.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Borrowed_Leader.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Borrowed_cycl_seq.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/borrowed_score.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/q4_4_4.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/c4_11_2_cyclic.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Testing.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/trialito.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/kNN_data" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/K_Nearest_Neighbours.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/Homework_2.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/scoring.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/c4_11_2_linear.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/scoring.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_4/q4_7_7.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/python/Borrowed_NB.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/python/NB.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/python/hw2_script.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/man_hat_data" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10601/linear_regression.py" />
-        <option value="$PROJECT_DIR$/IndeedScraper/LCS" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/iter_lcs" />
-        <option value="$PROJECT_DIR$/Project_Data_1" />
-        <option value="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/NGA50.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/topo_sort_data" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/N50.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/NG50.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/DAG" />
-        <option value="$PROJECT_DIR$/IndeedScraper/trial.py" />
-        <option value="$PROJECT_DIR$/10_601_Machine_Learning/LinReg.py" />
-        <option value="$PROJECT_DIR$/10_601_Machine_Learning/execution_control.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10_601/execution_control.py" />
-        <option value="$PROJECT_DIR$/Machine_Learning_10_601/LinReg.py" />
-        <option value="$PROJECT_DIR$/Big_data_practice/cross_validation.py" />
-        <option value="$PROJECT_DIR$/talencea/Base html renderer/Skills_Grabber.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_6/q_6.2.2.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/data/data_6_2_2" />
-        <option value="U:/home/abhishek/PycharmProjects/MSBIC/LinReg.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/weighted.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_6/q_6_2_2.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_6/petri_dish.py" />
-        <option value="$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week_15/viterbi_learning.py" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week_15/baum_welch_learning.py" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week_15/submission_week_15.txt" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week_15/test" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week_15/borrowed_seq_align.py" />
+        <option value="raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/udacity/1_notmnist.ipynb" />
+        <option value="$PROJECT_DIR$/Udacity/1_notmnist.py" />
+        <option value="$PROJECT_DIR$/Practice/input.txt" />
+        <option value="$PROJECT_DIR$/Practice/Trie_Construction.py" />
+        <option value="$PROJECT_DIR$/Practice/linked_lists.py" />
+        <option value="$PROJECT_DIR$/Practice/trie_again.py" />
+        <option value="$PROJECT_DIR$/Practice/bit_manipulation.py" />
+        <option value="$PROJECT_DIR$/BioInformatics/Week3/universal_string_problem.py" />
+        <option value="$PROJECT_DIR$/Practice/gray_code.py" />
+        <option value="$PROJECT_DIR$/Practice/trial.py" />
+        <option value="$PROJECT_DIR$/Practice/relative_ranks.py" />
+        <option value="$PROJECT_DIR$/Practice/hamm_dist.py" />
+        <option value="$PROJECT_DIR$/Practice/remove_vowels.py" />
+        <option value="$PROJECT_DIR$/Practice/longest_palindromic_substring.py" />
+        <option value="$PROJECT_DIR$/Practice/reverse_second_half_of_linked_list.py" />
+        <option value="$PROJECT_DIR$/Practice/isSubTree.py" />
+        <option value="$PROJECT_DIR$/Practice/two_sum.py" />
+        <option value="$PROJECT_DIR$/Practice/maxSlidingWindow.py" />
+        <option value="$PROJECT_DIR$/Practice/windowSum.py" />
+        <option value="$PROJECT_DIR$/Practice/windowMin.py" />
+        <option value="$PROJECT_DIR$/Practice/gcd.py" />
+        <option value="$PROJECT_DIR$/Practice/quick_select.py" />
+        <option value="$PROJECT_DIR$/Practice/LRU_Cache.py" />
+        <option value="$PROJECT_DIR$/Practice/rotate_inefficient.py" />
+        <option value="$PROJECT_DIR$/Practice/rotate_matrix.py" />
+        <option value="$PROJECT_DIR$/Practice/search_2_matrix.py" />
+        <option value="$PROJECT_DIR$/Practice/minPathSum.py" />
+        <option value="$PROJECT_DIR$/Practice/quick_select_dos.py" />
+        <option value="$PROJECT_DIR$/Practice/kClosestPoints.py" />
+        <option value="$PROJECT_DIR$/Practice/merge_sort.py" />
+        <option value="$PROJECT_DIR$/Practice/b_nary_.py" />
+        <option value="$PROJECT_DIR$/Practice/b_nary_altered.py" />
+        <option value="$PROJECT_DIR$/Practice/maxSubArr.py" />
+        <option value="$PROJECT_DIR$/Practice/maxSubArray_n^2.py" />
+        <option value="$PROJECT_DIR$/Practice/maxSubArray.py" />
+        <option value="$PROJECT_DIR$/talencea/Edge_detection" />
+        <option value="$PROJECT_DIR$/talencea/Edge_detection.py" />
+        <option value="$PROJECT_DIR$/Practice/tensorflow/test.py" />
+        <option value="$PROJECT_DIR$/Practice/tensorflow/image_classifier.py" />
+        <option value="$PROJECT_DIR$/Practice/tensorflow/retrain.py" />
+        <option value="$PROJECT_DIR$/Practice/mergeSort.py" />
+        <option value="$PROJECT_DIR$/Practice/quickSort.py" />
+        <option value="$PROJECT_DIR$/Practice/maxBST.py" />
+        <option value="$PROJECT_DIR$/Practice/floorKey.py" />
+        <option value="$PROJECT_DIR$/Practice/deleteNoe.py" />
+        <option value="$PROJECT_DIR$/Practice/ListNode.py" />
       </list>
     </option>
   </component>
@@ -289,7 +514,6 @@
     <option name="width" value="1924" />
     <option name="height" value="1042" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -305,6 +529,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,7 +552,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BioInformatics" />
+              <option name="myItemId" value="talencea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,187 +566,128 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BioInformatics" />
+              <option name="myItemId" value="talencea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BioInformatics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Week_6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BioInformatics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Week_6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSBIC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BioInformatics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Week_5" />
+              <option name="myItemId" value="drive-download-20170614T195129Z-001" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Lytmus/candidate_files" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="C:/ProgramData/Anaconda2/envs/py35/python.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\10_601_Machine_Learning\Old" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics\Week_4" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics\data\inner_fold" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics\Week_6\data" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\10_601_Machine_Learning" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\10_601_Machine_Learning\data" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics\Software_Challenge\Part_II" />
-      <recent name="C:\Users\karab\PycharmProjects\MSBIC\Machine_Learning_10601" />
+      <recent name="C:\Users\karab\PycharmProjects\MSBIC\Practice\tensorflow" />
+      <recent name="C:\Users\karab\PycharmProjects\MSBIC\talencea" />
+      <recent name="C:\Users\karab\PycharmProjects\MSBIC\Practice" />
+      <recent name="C:\Users\karab\PycharmProjects\MSBIC\Udacity" />
+      <recent name="C:\Users\karab\PycharmProjects\MSBIC\BioInformatics\Week_15" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BioInformatics/Week_13" />
+      <recent name="$PROJECT_DIR$/BioInformatics" />
+      <recent name="$PROJECT_DIR$/BioInformatics/Week_10/trash" />
+      <recent name="$PROJECT_DIR$/BioInformatics/Week~10" />
+      <recent name="$PROJECT_DIR$/BioInformatics/Week_9" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Dp_change">
-    <configuration default="false" name="weighted" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ListNode">
+    <configuration default="false" name="retrain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BioInformatics/Week_5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice/tensorflow" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MSBIC" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BioInformatics/Week_5/weighted.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/tensorflow/retrain.py" />
+      <option name="PARAMETERS" value="--bottleneck_dir=bottlenecks --how_many_training_steps=500 --model_dir=inception --summaries_dir=training_summaries/basic --output_graph=retrained_graph.pb --output_labels=retrained_labels.txt --image_dir=flower_photos" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mergeSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MSBIC" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/mergeSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LinReg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="quickSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10_601_Machine_Learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MSBIC" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\karab\PycharmProjects\MSBIC\10_601_Machine_Learning\Old\LinReg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/quickSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LinReg (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ListNode" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Machine_Learning_10_601" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MSBIC" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Machine_Learning_10_601/LinReg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/ListNode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="q_6_2_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="maxBST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BioInformatics/Week_6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MSBIC" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BioInformatics/Week_6/q_6_2_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Dp_change" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BioInformatics/Week_5" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MSBIC" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/maxBST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -741,19 +907,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.weighted" />
-      <item index="1" class="java.lang.String" itemvalue="Python.LinReg" />
-      <item index="2" class="java.lang.String" itemvalue="Python.LinReg (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.q_6_2_2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Dp_change" />
+      <item index="0" class="java.lang.String" itemvalue="Python.retrain" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mergeSort" />
+      <item index="2" class="java.lang.String" itemvalue="Python.quickSort" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ListNode" />
+      <item index="4" class="java.lang.String" itemvalue="Python.maxBST" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Dp_change" />
-        <item index="1" class="java.lang.String" itemvalue="Python.q_6_2_2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.weighted" />
-        <item index="3" class="java.lang.String" itemvalue="Python.LinReg (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.LinReg" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ListNode" />
+        <item index="1" class="java.lang.String" itemvalue="Python.maxBST" />
+        <item index="2" class="java.lang.String" itemvalue="Python.quickSort" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mergeSort" />
+        <item index="4" class="java.lang.String" itemvalue="Python.retrain" />
       </list>
     </recent_temporary>
   </component>
@@ -765,11 +931,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="189d8692-6efb-4136-829b-df667b294a8f" name="Default" comment="" />
-      <created>1483609265925</created>
+      <changelist id="99968cdb-b599-48e8-940c-446b217cc6bb" name="Default" comment="" />
+      <created>1490322285021</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1483609265925</updated>
+      <updated>1490322285021</updated>
     </task>
     <servers />
   </component>
@@ -786,25 +952,24 @@
     <frame x="-11" y="-11" width="1924" height="1042" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21997817" sideWeight="0.4935065" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3507729" sideWeight="0.50709605" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16975982" sideWeight="0.49317408" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276699" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32104638" sideWeight="0.5021834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39714625" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3507729" sideWeight="0.49290392" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33413753" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.49675676" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27783784" sideWeight="0.5064935" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42806184" sideWeight="0.49563318" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256936" sideWeight="0.4978166" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30130294" sideWeight="0.5068259" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21997622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2806183" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -817,565 +982,691 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndeedScraper/New Indeed Scraper/IndeedScraper.py</url>
-          <line>15</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/distance.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/distance.py</url>
+          <line>21</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndeedScraper/New Indeed Scraper/IndeedScraper.py</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/trail_1.py</url>
+          <line>11</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Base html renderer/html_to_text.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/trail_1.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Base html renderer/Petri_Dish/Google_Drive.py</url>
-          <option name="timeStamp" value="53" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/trail_1.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/greedy_motif_search.py</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/manhattan_reuse.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/problem_1.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/problem_1.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/upgma_1.py</url>
+          <line>16</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/greedy_motif_search.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="55" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/upgma_1.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/profile.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/profile.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/create_profile.py</url>
-          <line>9</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week9/upgma_1.py</url>
+          <line>140</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 2/distance.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="69" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/trash/trial_1.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_composition.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_iterative.py</url>
-          <line>1</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/neigh_join.py</url>
+          <line>38</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/euler_cycle.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="132" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/neigh_join.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/euler_cycle.py</url>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/neigh_join.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/trial.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/trial.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/trial.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_10/trial.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/suffix_arrays.py</url>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/trie.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_11/upgma_1.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_11/farthest_first.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_11/farthest_first.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trie_trial.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/pseudo_prefix_trie_matching.py</url>
           <line>32</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trailito.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/doesnt_work_trailito.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/pseudo_prefix_trie_matching.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/trie.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_12/working_suffix_tree_construction.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_trial.py</url>
+          <line>28</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/euler_path.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="144" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_ur_way.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <condition expression="edge == '278'" language="Python" />
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/euler_path.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="145" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_ur_way.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/euler_path.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="148" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_ur_way.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_orig.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="149" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_faster_ur_way.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/universal_string_problem.py</url>
-          <line>74</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_13/bw_matching_faster_ur_way.py</url>
+          <line>12</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/universal_string_problem.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="154" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/hidden_path.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/universal_string_problem.py</url>
-          <line>117</line>
-          <option name="timeStamp" value="156" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/outcome_probability.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_from_read_pairs.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="161" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/outcome_probability.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_orig.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="165" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/viterbi_algo.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/de_brujin_graph.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_orig.py</url>
-          <line>108</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/likelihood.py</url>
+          <line>7</line>
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_from_read_pairs.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="171" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/outcome_probability.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_from_read_pairs.py</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_14/viterbi_trail.py</url>
+          <line>32</line>
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/maximal_non_branching_paths.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="173" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week 3/maximal_non_branching_paths.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="175" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Template.py</url>
-          <line>2</line>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>16</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Template.py</url>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/prof_hmm.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/param_estimation.py</url>
           <line>12</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py</url>
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/viterbi_learning.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/viterbi_learning.py</url>
           <line>35</line>
-          <option name="timeStamp" value="234" />
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="237" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/param_estimation.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="238" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/forward_backward.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_4/q4_6_6.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="239" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week_15/baum_welch_trial.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10601/K_Nearest_Neighbours.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="241" />
+          <url>file://$PROJECT_DIR$/Practice/Trie_Construction.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10601/K_Nearest_Neighbours.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="242" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10601/python/hw2_script.py</url>
+          <url>file://$PROJECT_DIR$/Practice/linked_lists.py</url>
           <line>35</line>
-          <option name="timeStamp" value="250" />
+          <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10601/python/NB.py</url>
-          <line>103</line>
-          <option name="timeStamp" value="257" />
+          <url>file://$PROJECT_DIR$/BioInformatics/Week3/universal_string_problem.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="271" />
+          <url>file://$PROJECT_DIR$/Practice/tensorflow/retrain.py</url>
+          <line>873</line>
+          <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/NGA50.py</url>
-          <option name="timeStamp" value="283" />
+          <url>file://$PROJECT_DIR$/Practice/tensorflow/retrain.py</url>
+          <line>786</line>
+          <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="287" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="288" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10_601/Old/LinReg.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Machine_Learning_10_601/Old/LinReg.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="305" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <dependency master-id="0" />
-          <url>file://$PROJECT_DIR$/Machine_Learning_10_601/Old/LinReg.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="306" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="314" />
+          <url>file://$PROJECT_DIR$/Practice/tensorflow/retrain.py</url>
+          <line>1065</line>
+          <option name="timeStamp" value="222" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <dependency id="0" />
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-      <option name="time" value="316" />
+      <option name="time" value="223" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="count_dict[symbol][top]" />
+        <watch expression="count_dict[symbol][bottom + 1] - 1" />
+        <watch expression="i[0]" />
+        <watch expression="state_sequence.count(state)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_4/scoring.py">
+    <entry file="file://$PROJECT_DIR$/Udacity/1_notmnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
+        <state relative-caret-position="2675">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/data/XTrain.csv" />
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/data/XTrainSmall.csv" />
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_4/q4_7_7.py">
+    <entry file="file://$PROJECT_DIR$/Practice/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="50">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_4/trialito.py">
+    <entry file="file://$PROJECT_DIR$/Practice/linked_lists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/data/vocabulary.csv" />
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_4/Week_4_Merged_code_file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/python/Borrowed_NB.py" />
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/python/hw2_script.py" />
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/K_Nearest_Neighbours.py" />
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/python/NB.py" />
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Testing.py" />
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10601/linear_regression.py" />
-    <entry file="file://$PROJECT_DIR$/IndeedScraper/LCS" />
-    <entry file="file://$PROJECT_DIR$/Project_Data_1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/iter_lcs" />
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/man_hat_data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/NGA50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="83" lean-forward="false" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+        <state relative-caret-position="-200">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/topo_sort_data">
+    <entry file="file://$PROJECT_DIR$/Practice/Trie_Construction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="2075">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="87" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/k_mer_sets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/de_brujin_graph.py">
+    <entry file="file://$PROJECT_DIR$/Practice/trie_again.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/paired_composition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/string_reconstruction_orig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/N50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Software_Challenge/Part_II/NG50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10_601/Old/LogReg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/Topo_sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10_601/data/LinReg_XTrain.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IndeedScraper/trial.py" />
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week 3/euler_path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2300">
-          <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/DAG">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1378331450/numpy/core/umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="3584" column="4" lean-forward="false" selection-start-line="3584" selection-start-column="4" selection-end-line="3584" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python34/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4450">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python34/Lib/site-packages/numpy/matrixlib/defmatrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6150">
-          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10_601/execution_control.py">
+    <entry file="file://$PROJECT_DIR$/Practice/bit_manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10_601/Old/LinReg.py">
+    <entry file="file://$PROJECT_DIR$/BioInformatics/Week3/universal_string_problem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1025">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="700">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Machine_Learning_10_601/LinReg.py">
+    <entry file="file://$PROJECT_DIR$/Practice/trial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2575">
-          <caret line="106" column="31" lean-forward="false" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://U:/home/abhishek/PycharmProjects/MSBIC/LogReg.py" />
-    <entry file="file://$PROJECT_DIR$/talencea/Base html renderer/Skills_Grabber.py">
+    <entry file="file://$PROJECT_DIR$/Practice/relative_ranks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Big_data_practice/cross_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/data/BLOSUM62.txt">
+    <entry file="file://$PROJECT_DIR$/Practice/hamm_dist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/data/data_6_2_2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://U:/home/abhishek/PycharmProjects/MSBIC/LinReg.py">
+    <entry file="file://$PROJECT_DIR$/Practice/gray_code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/data/BLOSUM62.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/data/global_alignment_data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python34/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/Practice/remove_vowels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/weighted.py">
+    <entry file="file://$PROJECT_DIR$/Practice/longest_palindromic_substring.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="624">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/q_6_2_2.py">
+    <entry file="file://$PROJECT_DIR$/Practice/isSubTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="18" column="146" lean-forward="false" selection-start-line="18" selection-start-column="146" selection-end-line="18" selection-end-column="146" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_6/petri_dish.py">
+    <entry file="file://$PROJECT_DIR$/Practice/two_sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="112" column="45" lean-forward="false" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="250">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BioInformatics/Week_5/Dp_change.py">
+    <entry file="file://$PROJECT_DIR$/Practice/maxSlidingWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/windowSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/windowMin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/gcd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/LRU_Cache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/rotate_inefficient.py" />
+    <entry file="file://$PROJECT_DIR$/Practice/rotate_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/search_2d_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/minPathSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/kClosestPoints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BioInformatics/Week4/q4_7_7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BioInformatics/Week5/weighted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/reverse_second_half_of_linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BioInformatics/Week5/DAG">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/maxSubArray_BruteForce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/b_nary_altered.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/b_nary_orig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/merge_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/maxSubArray_n^2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/maxSubArray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/tensorflow/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/tensorflow/iris_deep_learner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/envs/py35/Lib/site-packages/tensorflow/python/platform/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/tensorflow/retrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="147" column="82" lean-forward="false" selection-start-line="147" selection-start-column="82" selection-end-line="147" selection-end-column="82" />
+          <folding>
+            <element signature="e#2438#2476#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/quick_select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/quick_select_dos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/maxBST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/floorKey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/quickSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/deleteNode.py" />
+    <entry file="file://$PROJECT_DIR$/Practice/mergeSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/talencea/Edge_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Tecumseh.vision/Python_Code/TransferLearner_TensorflowInception/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Tecumseh.vision/Python_Code/TransferLearner_TensorflowInception/retrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Tecumseh.vision/Python_Code/TransferLearner_TensorflowInception/iris_deep_learner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/ListNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="98" column="32" lean-forward="false" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
           <folding />
         </state>
       </provider>

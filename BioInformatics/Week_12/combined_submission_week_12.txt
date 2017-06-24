@@ -1,0 +1,670 @@
+class IdGen:
+    id_var = 0
+
+    @staticmethod
+    def get_id():
+        temp = IdGen.id_var
+        IdGen.id_var += 1
+        return temp
+
+def make_prefix_tree(ls_of_strings):
+    len_of_ls = max([len(single_string) for single_string in ls_of_strings])
+    ls = [[] for _ in range(len_of_ls)]
+    IdGen.get_id()
+    ls2 = []
+    for single_string in ls_of_strings:
+        make_tree(single_string, ls, ls2)
+    from operator import itemgetter
+    return sorted(ls2, key=itemgetter(0))
+
+
+def make_tree(strin, tree, ls):
+    edge_start = 0
+    reuse = True
+    for char_idx, char in enumerate(strin):
+        # Change the edge_end w.r.t whether u have seen the end before
+
+        temp = [i[1] for i in tree[edge_start] if i[2] == char] if edge_start < len(tree) else None
+        temp = temp[0] if temp else None
+
+        if temp and reuse:
+            edge_end = temp
+        else:
+            edge_end = IdGen.get_id()
+            tree[char_idx].append((edge_start, edge_end, char))
+            ls.append([edge_start, edge_end, char])
+            reuse = False
+        edge_start = edge_end
+
+
+if __name__ == '__main__':
+    file = open('input.txt')
+    string_lists_out = file.read().splitlines()
+    out = make_prefix_tree(string_lists_out)
+    fmt_out = lambda x: str(x[0]) + '->' + str(x[1]) + ':' + str(x[2])
+    print('\n'.join(list(map(fmt_out, out))))from collections import defaultdict
+def trie_construct(string_lists):
+    hm = []
+    counter_main = 0
+    for single_string in string_lists:
+        leading_edge = 0
+        for char_idx, single_char in enumerate(single_string):
+            weight = single_char
+            if not hm or (hm and (char_idx >= len(hm) or weight != hm[char_idx][2])):
+                counter_main += 1
+                lagging_edge = counter_main
+                # Create leading_edge->lagging_edge:weight
+                hm.append([leading_edge, lagging_edge, weight])
+            else:
+                lagging_edge = hm[char_idx][1]
+            leading_edge = lagging_edge
+
+
+    dicto = defaultdict(list)
+    for elem in hm:
+        dicto[elem[0]].append(elem[1:])
+    return hm, dicto
+
+
+if __name__ == '__main__':
+    file = open('input.txt')
+    string_lists_out = file.read().splitlines()
+    out, dict_out = trie_construct(string_lists_out)
+    fmt_out = lambda x:str(x[0])+'->'+str(x[1])+':'+str(x[2])
+    print('\n'.join(list(map(fmt_out, out))))
+    print(dict_out)class IdGen:
+    def __init__(self, id_local=0):
+        self.id = id_local
+
+    def get_id(self):
+        temp = self.id
+        self.id += 1
+        return temp
+
+
+def trie_construction(string_lists):
+    # for single_string in string_lists:
+    curr_tree = []
+    # idx = id_gen.get_id()
+
+    create_tree(curr_tree, node_idx, string_lists[0])  # , idx)
+    print(curr_tree)
+
+#
+# def create_tree(tree, single_string, curr_index):
+#     while len(single_string) >= 2:
+#         curr_string = single_string[0]
+#         # tree[]
+#         if curr_string in tree[]:
+#             pass
+#             # reuse
+#         else:
+#             edge_end_idx = id_gen.get_id()
+#         tree.append((curr_string, (curr_index + '->' + single_string[1])))
+#         single_string = single_string[1:]
+
+
+def create_tree(tree, node_idx, single_string):
+    while len(single_string) >= 2:
+        curr_char = single_string[0]
+        if curr_char in tree[node_idx]:  # Every tree contains ordered numbered nodes which has node index as an element
+            # reuse node
+            pass
+        else:
+            # create node
+            tree[]
+            # formalities with capturing the node
+            pass
+
+        node_idx += 1
+        single_string = single_string[1:]
+
+if __name__ == '__main__':
+    file = open('input.txt')
+    id_gen = IdGen(1)
+    string_lists_out = file.read().splitlines()
+    # print(string_lists_out[0])
+    out = trie_construction(string_lists_out)
+    fmt_out = lambda x:str(x[0])+'->'+str(x[1])+':'+str(x[2])
+    print(out)
+class IdGen:
+    id_var = 0
+
+    @staticmethod
+    def get_id():
+        temp = IdGen.id_var
+        IdGen.id_var += 1
+        return temp
+
+
+def trie_construction(ls_of_strings):
+    trie = [{}]
+    edges = []
+
+    IdGen.get_id()
+    for single_string in ls_of_strings:
+        make_tree(single_string, trie, edges)
+    return trie, edges
+
+
+def make_tree(single_string, trie, edges):
+    edge_start = 0
+    for j in single_string:
+        if j in trie[edge_start]:
+            edge_end = trie[edge_start].get(j)
+        else:
+            edge_end = IdGen.get_id()
+            trie[edge_start].update({j: edge_end})
+            edges.append((edge_start, edge_end, j))
+            trie.append({})
+        edge_start = edge_end
+
+
+def trie_matching(text, trie):
+    index_ls = []
+    for idx, v in enumerate(text):
+        prefix_trie_matching(text, trie, idx, v, index_ls)
+
+    return index_ls
+
+
+def prefix_trie_matching(text, trie, idx, v, index_ls):
+    bkp_idx = idx
+    start = 0
+    while v in trie[start]:
+        start = trie[start].get(v)
+        if not trie[start]:  # Is a leaf
+            index_ls.append(idx)
+            break
+        bkp_idx += 1
+        if bkp_idx < len(text):
+            v = text[bkp_idx]
+        else:  # Ran out of things to compare in Text
+            break
+
+
+
+def binary_search(ls, elem):
+    # Its all sorted
+    return binary_search_helper(ls, 0, len(ls) - 1, elem)
+
+def binary_search_helper(ls, start, end, elem):
+    mid = (start+end) // 2
+    if elem == ls[mid]:
+        return mid
+    elif elem < ls[mid]:
+        return binary_search_helper(ls, start, mid, elem)
+    else:
+        return binary_search_helper(ls, mid+1, end, elem)
+
+# Longest Repeat
+def iterative_binary_search(ls, elem):
+    start = 0
+    end = len(ls)-1
+    idxs = -1
+    while start == mid or end == mid:
+        mid = (start + end) // 2
+        kmers = {ls[i: i + mid] for i in range(len(ls) - mid + 1)}
+        trie, edges = trie_construction(kmers)
+        indices = trie_matching(ls, trie)
+        if elem == ls[mid]:
+            idxs = mid
+            break
+        elif elem < ls[mid]:
+            end = mid
+            mid += (mid - start) // 2
+        elif len(indices) > len(kmers):
+            start = mid
+            mid += (end - mid) // 2
+
+    return idxs
+
+
+if __name__ == '__main__':
+    out = iterative_binary_search('ACAAGCCTAAATATTAAACTTCGGGTTTAAGGATGTTGTTGGTCACTACGACTCATATGGGGCGAAATAGAACCGGACATTATAGCTACGGCCCTTGTCATAGGTGGCCTCGTCATCGGGTATGAAGCGTGGTTACGACCGTCCTCTATAGGGCTGTGAAAGATAAGCACTACTTCTGATGTGATGTATAAGTTTCCGCTGTGAAAAATTAATCACATTGACCCCTGGACCTGTCAACGCTGTCTGAATTATCATAGACGGAAACGTAGCGTTCTGTAAAAGTACCTGATGCGGGGGCGCAAGTCGTGACTGCCCCCTAGAACACGTTCTTCCGAAGGCATTAATTGGAATGAGATGAAACTCGCTAGGATTTGCGCCATACTACCTTCGATATGTTCCAAATCATTCGCCGGTAATCACGCAGAAAATTCCATAGCAGTTTTGTATGAAGAGGGATAGTGGGAAGGTGGTGCTCGATTGCTGTGTCCGCCTAGCACGCAGTGCTTTTGCGTCATCTTTCTACTCTATACCAAAAGGGTCTGTGCGCCGCGGACTAAAATCCGGCCTAGATCCAATCATCAACGTTGCACCGGAATCCCCTTTAGTTGGCACTTAGCCCCGCGCGTAAGATGACTCTACAGAACAGGTGGAGTCGGCCCTTCTGTAAAAGTACCTGATGCGGGGGCGCAAGTCGTGACTGCCCCCTAGAAGAGCAAGCACGCCGGGAACGCGACGTCGCAGACATAAAACATACGCGGTTTCTGGAATCGCGCGCCCCCCAAGAGCGCTGATATTATGGAAGCATCAGCTGAGAGGTTTTTTTATGATAGCCTATATCGTGCGACAACCGGACAAAGCTTACATTGAGTATCAGTACTTACTCGGGTCTCCGATCAGGCTTCTGTAAAAGTACCTGATGCGGGGGCGCAAGTCGTGACTGCCCCCTAGAAGTACCGTAATTTTTTAAAGTAAACTACACTTCAGCTCCATTGTGCGTGGAGCCTTTTTCCGCAAACCAATTTGTACATTAGGGTTCTTAGTGCGGCCCTCGAAGATGGCTACTCCTTGACTCCTAGGTCGAAGACAGCATTGAGACAAGGCTAGCAGATGTTATTTCTCATTCCGGCCCCTGAGCAATGATTCACACAATGCC')
+    print(out)
+    # print iterative_binary_search([1,2,3], 1)
+import sys
+import numpy as np
+def dp_change(money, coins):
+    min_coins = [0] + [float('inf') for i in range(1, money+1)]
+    for i in range(1, money+1):
+        for j in range(len(coins)):
+            if i >= coins[j]:
+                if min_coins[i-coins[j]]+1 < min_coins[i]:
+                    min_coins[i] = min_coins[i-coins[j]] + 1
+    print(min_coins[money])
+
+# def dp_change_main(money,coins):
+#     dp_change_main(money, coins, 0)
+#
+# def dp_change_1(moneyleft, denominations, count):
+#     if moneyleft <= 0:
+#         return
+#     for i in denominations:
+#         dp_change(moneyleft-i, count+1)
+
+def manhattan_problem(n, m, down, right):
+    s = [[0 for i in range(m+1)] for j in range(n+1)]
+    for i in range(1, n+1):
+        s[i][0] = s[i-1][0] + down[i-1][0]
+    for j in range(1, m+1):
+        s[0][j] = s[0][j-1] + right[0][j-1]
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            s[i][j] = max(s[i - 1][j] + down[i-1][j], s[i][j - 1] + right[i][j-1])
+    return s[n][m]
+
+
+# def output_lcs(str1, str2, i, j):
+#     if i == 0 or j == 0:
+#         return 0
+#     if str1[i-1] == str2[j-1]:
+#     return 1+output_lcs(str1, str2, i-1, j-1)
+#     else:
+#         #print(ans[i-1], str1[i - 1])
+#         return max(output_lcs(str1, str2, i, j-1), output_lcs(str1, str2, i-1, j))
+
+
+# def output_lcs(str1, str2):
+#     str_matrix = [0 for i in str1]
+#     for idx in range(len(str2)):
+#         nxt_row = [0]
+#         if str1 == str2:
+#             if str_matrix[idx-1][idx-1]+1 > max_lcs:
+#                 max_lcs = str_matrix[idx-1][idx-1]+1
+#             nxt_row.append()
+
+def LCS_backtrack(v, w):
+    s = [[-1 for i in range(len(w) + 1)] for j in range(len(v) + 1)]
+    max_s = [float('-inf'), -1]
+    backtrack = [['N' for i in range(len(w) + 1)] for j in range(len(v) + 1)]
+    for i in range(len(v) + 1):
+        s[i][0] = 0
+    for j in range(len(w) + 1):
+        s[0][j] = 0
+    for i in range(1, len(v) + 1):
+        for j in range(1, len(w) + 1):
+            s[i][j] = s[i - 1][j - 1] + 1 if v[i - 1] == w[j - 1] else 0
+            # if s[i][j] == s[i - 1][j]:
+            #     backtrack[i][j] = 'D'
+            # elif s[i][j] == s[i][j - 1]:
+            #     backtrack[i][j] = 'R'
+            # elif s[i][j] == s[i - 1][j - 1] + 1 and v[i - 1] == w[j - 1]:
+            #     backtrack[i][j] = 'C'
+            if max_s[0] < s[i][j]:
+                max_s = [s[i][j], i]
+
+
+    return v[max_s[1]-max_s[0] : max_s[1]]
+
+def output_lcs(backtrack, v, i, j):
+    if i == 0 and j == 0:
+        return
+    if backtrack[i][j] == 'D':
+        output_lcs(backtrack, v, i - 1, j)
+    elif backtrack[i][j] == 'R':
+        output_lcs(backtrack, v, i, j - 1)
+    elif backtrack[i][j] == 'C':
+        output_lcs(backtrack, v, i - 1, j - 1)
+        print(v[i - 1], end='')
+
+
+# dp_change(16810,
+# list(map(int, '24,21,14,8,5,3,1'.split(','))))
+sys.setrecursionlimit(2000)
+str1 = 'GTTTGGAAGGCGCGTATTATCAACTCCCCTTCTGCCAAGAATAGCACACCATTGGTGGTCTCCATTGTGGGGGTCCTAAAGTCAGATCGAGCTCCACGAGGGCACTAGCTAAGCGCGGGACATAGACAACCGTGCCTCCTTGTATACAGCCCCTAAGACTTGCACATCGATACAGTAATAAGCTGATACTGGATACTCTTGGTCACCAGTCCTGGGACGGTGGCGGTGTGCCCTTCTAGGTCGGAATAAGGCTAAATCGACCAGTCATGGGACGCACACACGGATTTATAGACGGCCGTGTCCCGTTACGCCTACTCCAAATAAGTACCTGGAGTCCTCTGGCAACACTGGTACTATTTAGACACGACAAAGTACACAGCGGGAGGACCCAACCGAGCAATGCGTAAGCCTCAAAAACCTACGATACTTTGGCACGGCAGGAATCGGTTGCCGACTACTGCAAACGAATGAGCACAACTACAGAAGCTTTCTGACCCAATAAGATGCCACTATGCCCCACTCGCATCGGTAGTAAACTACTTTGGCATTAGCGGTCAAGGCGATTCCTCAAGTAAGTGAATTTGACTAGCACGGCGGCGTCGTAAATAGTCTCGTGGTGAGCTTCAAGCATCTGCATATGTAACTCATGGCCATGACAGCCGACAATTCACCTTTCCCCTCCCCTTATAGAGACAAAGCGGTGCGTGTTCATAGTGCCGTCAACAACCAATACGATTATGCCTTCTTCCTAGTACGCCTATCTAGATTAGTGGATTTCTGGGTTCCATCAACCCTCCGAGTTATGGGAACTTTCTGACGCTCGAACTGGTCATAGCACAAGGGCAGATCGCCTCTACCGTCCACTACGCCGTTACACCGCTAGGTCTATTCTGCGCACGACCACGTTTTGTATGCCACTAAAAGTGACAGCGTCTCCGAGTCAGGAGCTGCTGACTGAAAGCTTCGAGATACACAATGAAAGCCCACGGCACGCACACTG'
+str2 = 'TTTTGCCAGTGCAGGCTGGTGACAGATTAACGAAAGGTAGCTTCCCCGTCACGGCCGTCATGCATAGCATTGGCCAGGGGGTGGTAGAGCCAAAGGCCGTCGACGCGGCGTATACCCGAAGTACCCGGCAAGATGATTAACGGAGTTCCCGGACGACGCATTATCTCCAATGATGTTATCCCAGTCATAATGAAATGGTCGACTACACGGGTAGAAAAAAGCACAACCCGTAGCGACGGGCATTCCGCGCAGGAGTGTACCGTCTCCTTACGTTATAGTTTACTGCAGAGCTAGCGGACATTATACCTTCGTCGCGTAAGAACTTTCGGCCGGGCGGACTTTAATCTATTCGACATACGCCTGGAACGGGGGCATAGCCACTTGGCTGACTTGGAAAGAGACCCGTCTACCCCTTGCCGCAGGGGCACGCTTGTTGAAATGTCAAGAACAGTCTCGGGGAATTACGGGTCCTCGCGACAGGAATGCCTGAGATCCGGTTTTATCCGACTCTACGTGGTGTGGTGTTCTCATATACACAACGCCGTAGGTGGCCAATTCAGACTGCTCAGATAACAGGATCGGAAAACGCGTTGACTAAAGCAGTTTCGATATGAGTTTCGTCCCCGCTCTCCGGCTCGTTAAAATGACGGGACCTTATAATAGAGTGTCCGCAGCGGGCTTCCAGGCAACTCATGCTTTGGGACGCGCCCTATTAGATCGAAGTTAGCTGAGTTGGAGAAGAGAGTCAAATTGAAAGCGCGCTGACATCGCTACCAGACTTTTACGCGTCTGGACTCTCGACCTCGGGGCTTCCAGCAAGGCTTGCGCTTCTAGTACTTAGGGGTTCTCAGGCGCAAAATAAGCCCTACCGAATACTCCAAGTCTACATTACTTGTACAGCAAACGCGCGTAACAAGGCCACGGCGGCTAAATGTGTGACCTATCCGGGATACGACCAGTCCCCTCCCACACCATTCTGGATTCGAGCAGTCGTCCGTAG'
+z = LCS_backtrack(str1, str2)
+print(z)
+#output_lcs(z, str1, len(str1), len(str2))
+# file = open('man_hat_data')
+# lines = file.read().splitlines()
+# n = int(lines[0].split(' ')[0])
+# m = int(lines[0].split(' ')[1])
+# down = [list(map(int,single_line.split(' '))) for single_line in lines[1:n+1]]
+# right = [list(map(int,single_line.split(' '))) for single_line in lines[n+2:]]
+# print(manhattan_problem(n, m, down, right))class IdGen:
+    id_var = 0
+
+    @staticmethod
+    def get_id():
+        temp = IdGen.id_var
+        IdGen.id_var += 1
+        return temp
+
+def ModifiedSuffixTrieConstruction(Text):
+    Trie = [{}]  # a graph consisting of a single node root
+    for i in range(len(Text)):
+        currentNode = 0
+        for j in range(i, len(Text)+1):
+            currentSymbol = Text[j]
+            if currentNode in Trie and Trie[currentNode][0] == currentSymbol:
+                currentNode = Trie[currentNode][1]
+            else:
+                newNode = IdGen.get_id()
+                Trie.append({currentNode: [currentSymbol, newNode, j]})
+                # add an edge newEdge connecting currentNode to newNode in Trie
+                # Symbol(newEdge) = currentSymbol
+                # Position(newEdge) = j
+                currentNode = newNode
+        if currentNode not in Trie:
+            currentNode[2] = i
+    return Trie
+
+
+def yield_suffixes(strin):
+    for i in range(len(strin)):
+        yield strin[i:]
+
+if __name__ == '__main__':
+    inp = yield_suffixes('CCACGACGTAGACCGTTGCTAAAAGACCCATCTCCCCTAAACGTAAACGACAAGACGATGAACACCTTGCGCTACTTAATATGCTGCGCAGCTGGCCGGGACCAGGGCCGGGATGCTAAAGCGGCTAACCCATAAGCATACTGTCCACCCGCAGTAATGCAAGTATCTCGCCTATGGCGCTCGACCTAGCGGCATCCGATAGATGGACAGCGCCGACTAAAGTCTCAGTCCGTAGTTTCAAGGTACTACACGTCCTTCGCAAGATGGGGGACCTTCGTCGGAACCACGCAGCTTATGACACTTATCGGCAACAAGGCGGTCAGACATTGACCACCGCATCGAACCGGAAGGAGCCGAAGTAGGGGCGAGCCGCAATATATCTACACGAGCTCGATGTGTGTCTATTCCGTCGTAATACAGTGACGGGTAGTGCTGGATCAAAAGAATCAAGGTGCGAACATGTCCAGCAGCCAACGGGGCAAGAGTAGGTGAGGAGAGCATGGCAGTACAATAGAGACGGTGCCACTGCCACGACGTGTGTAGTCCACCTTTGCAGATGTTTATAATTGTATTAGGCAAGTCGTAAGGTCGTTCTAAAAAATGACCCTCGGTCTACAGCCGCGATTATAATTGAGTAACTCACTAACATGTGCAAACAAATAAGTATCATCAACAGAGTCAGTATGGCTCCTTGATAGAGCACTGAATAAGATCGGTCCTGGGGCAAACGATCGAAAAGCTCGTATATGAACAATTTTTACCAGTTGTTTCTACAGCATTTGTAACCGTACGACTCTGATCAGAGCGATTACAGGTAGCGACACCAAACAGGAAGTGATCGTCTAAGCTCCCCCCAACACAGTAGCGACCAACTGCAGACGCGCTCCTCGAGCCACCAACCCTTAACCAAGAAGTGC$')
+    for i in inp:
+        ModifiedSuffixTrieConstruction(i)from BioInformatics.Week_12.doesnt_work_trial_1 import trie_construct
+def PrefixTrieMatching(Text, Trie):
+    symbol = Text[0]
+    v = 0  # root of tree
+    counter = 0
+    pattern_spelled = ''
+    while True:
+        if v not in Trie:
+            print('Hello ', pattern_spelled)
+            return pattern_spelled
+        elif symbol in list(zip(*Trie[v]))[-1]:
+            counter += 1
+            bk_symbol = symbol
+            if counter >= len(Text):
+                print('Hello ', pattern_spelled)
+                return
+            symbol = Text[counter]
+
+            pattern_spelled += symbol
+            v = [i[0] for i in Trie[v] if i[-1] == bk_symbol]
+            print(v)
+            if v:
+                v = v[0]
+            # else:
+            #
+            #     print()
+        else:
+            # print("no matches found")
+            return
+
+
+def TrieMatching(Text, Trie):
+    while Text:
+        p = PrefixTrieMatching(Text, Trie)
+        # print('Here is ', p)
+        Text = Text[1:]
+
+
+string_lists = ['ATCG', 'GGGT']
+TrieMatching('AATCGGGTTCAATCGGGGT', trie_construct(string_lists)[1])from BioInformatics.Week_12.doesnt_work_suffix_tree_trial_9 import get_suffix_tree
+from BioInformatics.Week_12.doesnt_work_suffix_tree_const_6 import can_traverse
+
+
+def shortest_nonshared_substring(str1, str2):
+    suffix_tree = get_suffix_tree(str2)
+    for k in range(2, len(str1) + 1):
+        non_shared = False
+        for i in range(len(str1) - k + 1):
+            if not can_traverse(str1[i: i + k], suffix_tree):
+                non_shared = True
+        if non_shared:
+            ret = str1[i: i + k]
+            break
+    return ret
+
+
+if __name__ == '__main__':
+    seq_1 = 'GAGCGATGTGTAAAGACGGGCCTAGTGTGTTATTGGTGAGGATCCGCAAATTCCGCTTTAACATCGCTCAACCGTCCACGAGCAGCTCGCGGCTTGTTTGATTTTGCTCACCCGGAACTAAGCCTTCAATAATTGCGGGACACTTCTACTTTCCATGTATTAAAACCTTATAATTCCGAGAGACTGACATTTTAACCCAGGGATTCTCGGGGCTTGTAGGTCACTGGCGTTAGCTCTGCCAATGTTCTTCATCGCCGAAATTAAACTCGTGACCTTGCCCTACGGTTTGAAACGTTGGATTCCTAGCATTCGGTGCAACGGGAGTTCCATACCAGCAGTTAAGGACCGGGTTGCCCCGTCCCACTACGAGCAGCCGTTAGAAAACAGTTCTACCGGAGGCTATCCCGCACCACGGGTTTTCTTAGTGAAAGGGACTGCGCAGCCATCGAAGAGTAGGGGGAGTCAGAGAGAGGCAGGCTTGTTGGGCTGATACATCTAGTTTACTAAATAGCCTTAATGGCGTCCCCCTCTTCGTTGATGCGCGTGGCCTGTGAAATTAGGCAGGGCCCAATGAGCAAGGCTGATTACTATCTAATTGCAGAGCGCAATGCTCTCATATATTATTATCCATGAATCTCATTTCACTAATCAGAAACGTG'
+    seq_2 = 'CACCTCGTCAATACAACAAAAGGCGGCTCGCTTAAAGGGCGCAGCTAGTTCCTCCCCCTCTCATTGGGACATAGTCAACCTGCTAATCCGGATTCGAATGGATTATTCCGTAATTGAACGGTAATTTAGTGAGCTTCGCAGTAAACGATAGATGCGAGCTCTAGCAGGCCACTGACTATATAAACGCCAACACTAGTGCCGTGCATGGACGACTCGATGTACTATAGATTTGCACAGGTATGACCGGAGGAGCGGGACTGCCTAGGCTATAGGGAACGGGGAGTATTGGGAGCCTTTTAGGCCCTCGTCATATCCCTTAACGTTCCCGCGCAGCTAAATTGTGGAACCGGAAAACAATGGATCTGCTTATTTTTGTAGGCTTGGTTAAGCGAAACGGATCAAAATAAACAAAGAATTAATCAATGAACTAACCAACGAAGTAAGCAAGGATATACATAGATTTATTCATTGATCTATCCATCGATGTATGCATGGACACAGACTTACTCACTGACCTACCCACCGACGTACGCACGGAGAGTTAGTCAGTGAGCTAGCCAGCGAGGTAGGCAGGGTTTTCTTTGTTCCTTCGTTGCTTGGTCTCTGTCCCTCCGTCGCTCGGTGTGCCTGCGTGGCTGGGCCCCGCCGGCGCGGGGAAA'
+
+    out = shortest_nonshared_substring(seq_1, seq_2)
+    print(out)
+from operator import itemgetter
+
+def suffix_arrays(strin):
+    ls = []
+    for i in range(len(strin)):
+        ls.append(strin[i:])
+    return [i[0] for i in sorted(enumerate(ls), key=itemgetter(1))]
+
+
+# print(', '.join(map(str, looper('AACGATAGCGGTAGA$'))))
+print(', '.join(map(str, suffix_arrays('banana$'))))def suffix_tree_const(strin):
+    ls = []
+    for i in range(len(strin)):
+        ls.append(strin[i:])
+    maybe_suffix_tree(ls)
+
+
+def maybe_suffix_tree(ls_strings):
+    tree = []
+    for strin in ls_strings:
+        make_tree(strin, tree)
+
+
+def make_tree(strin, tree):
+    edge_start = 0
+    new_id = 1
+    for char_idx, char in enumerate(strin):
+        # Change the edge_end w.r.t whether u have seen the end before
+
+        if char_idx in tree:
+            temp = [i[1] for i in tree[char_idx] if i[2] == char][0]
+
+        if temp:
+            edge_end = temp
+        else:
+            edge_end = new_id
+            tree[char_idx].append((edge_start, edge_end, char))
+        print(edge_start, '->', edge_end, ':', char)
+        edge_start = edge_end
+
+if __name__ == '__main__':
+    string_out = 'ATAAATG$'
+    suffix_tree_const(string_out)
+class IdGen:
+    def __init__(self, id_local=0):
+        self.id = id_local
+
+    def get_id(self):
+        temp = self.id
+        self.id += 1
+        return temp
+
+
+def trie_construction(single_string, final_ls, prev_node, idx, node_reuse):
+    if not single_string:
+        return
+    if not (idx < len(final_ls) and final_ls[idx][2] == single_string[0]) or not node_reuse:
+        new_node = id_gen.get_id()
+        final_ls.append([prev_node, new_node, single_string[0]])
+        node_reuse = False
+    else:
+        new_node = final_ls[idx][1]  # Node re-use
+    trie_construction(single_string[1:], final_ls, new_node, idx + 1, node_reuse)  # [1:])
+
+
+def trie_prep(string_lists):
+    final_ls = []
+    for single_string in string_lists:
+        trie_construction(single_string, final_ls, prev_node=0, idx=0, node_reuse=True)
+    return final_ls
+
+def TrieConstruction(Patterns):
+    from collections import defaultdict
+    Trie = defaultdict(list)
+    Trie.update({0: [[0, '']]})  # a graph consisting of a single node root
+    for Pattern in Patterns:
+        currentNode = 0
+        for currentSymbol in Pattern:
+            temp = None
+            if currentNode in Trie:
+                temp = [i for i in Trie[currentNode] if i[1] == currentSymbol][0]  # there is an outgoing edge from currentNode with label currentSymbol
+                if temp:
+                    currentNode = temp[0]  # ending node of this edge
+            if not temp:
+                newNode = id_gen.get_id()  # add a new node newNode to Trie
+                Trie[currentNode].append([newNode, currentSymbol])  # add a new edge from currentNode to newNode with label currentSymbol
+                print(currentNode, newNode, currentSymbol)
+                currentNode = newNode
+    return Trie
+
+if __name__ == '__main__':
+    file = open('input.txt')
+    id_gen = IdGen(1)
+    string_lists_out = file.read().splitlines()
+    out = TrieConstruction(string_lists_out)
+    fmt_out = lambda x:str(x[0])+'->'+str(x[1])+':'+str(x[2])
+    print(out)
+    #print('\n'.join(list(map(fmt_out, out))))
+
+
+
+class IdGen:
+    id_var = 0
+
+    @staticmethod
+    def get_id():
+        temp = IdGen.id_var
+        IdGen.id_var += 1
+        return temp
+
+
+def trie_construction(ls_of_strings):
+    trie = [{}]
+    edges = []
+
+    IdGen.get_id()
+    for single_string in ls_of_strings:
+        make_tree(single_string, trie, edges)
+    return trie, edges
+
+
+def make_tree(single_string, trie, edges):
+    edge_start = 0
+    for j in single_string:
+        if j in trie[edge_start]:
+            edge_end = trie[edge_start].get(j)
+        else:
+            edge_end = IdGen.get_id()
+            trie[edge_start].update({j: edge_end})
+            edges.append((edge_start, edge_end, j))
+            trie.append({})
+        edge_start = edge_end
+
+
+def trie_matching(text, trie):
+    index_ls = []
+    for idx, v in enumerate(text):
+        prefix_trie_matching(text, trie, idx, v, index_ls)
+
+    return index_ls
+
+
+def prefix_trie_matching(text, trie, idx, v, index_ls):
+    bkp_idx = idx
+    start = 0
+    while v in trie[start]:
+        start = trie[start].get(v)
+        if not trie[start]:  # Is a leaf
+            index_ls.append(idx)
+            break
+        bkp_idx += 1
+        if bkp_idx < len(text):
+            v = text[bkp_idx]
+        else:  # Ran out of things to compare in Text
+            break
+
+
+if __name__ == '__main__':
+    fi = open('match.txt')
+
+    lines = fi.read().splitlines()
+    genome = lines[0]
+    dna = lines[1:]
+
+    trie, edges = trie_construction(dna)
+    print('\n'.join(map(lambda x: str(x[0]) + '->' + str(x[1]) + ':' + x[2], edges)))
+    indices = trie_matching(genome, trie)
+    print(' '.join([str(x) for x in indices]))from BioInformatics.Week_12.working_trie import trie_construction
+
+
+def suffix_tree_const(strin):
+    ls = []
+    for i in range(len(strin)):
+        ls.append(strin[i:])
+    trie, edges = trie_construction(ls)
+    # print(edges)
+    return trie
+
+
+def construct_suffix_tree(trie, level, ret):
+    ls = []
+    for single_char in trie[level]:
+        edge_end = trie[level][single_char]
+        if not trie[edge_end]:
+            ret.append(single_char)
+            ls.append(''.join(ret))
+            ret = []  # Filter only edges
+        elif len(trie[edge_end]) > 1:
+            ret.append(single_char)
+            ls.append(''.join(ret))
+            ret = []  # Filter only edges
+            ls += construct_suffix_tree(trie, edge_end, ret)
+            ret = []  # Reset edge case
+        elif len(trie[edge_end]) == 1:
+            ret.append(single_char)
+            ls += construct_suffix_tree(trie, edge_end, ret)
+            ret = []  # Filter only edges
+    return ls
+
+
+def get_suffix_tree(stub):
+    trie = list(suffix_tree_const(stub))
+    ret = []
+    return construct_suffix_tree(trie, 0, ret)
+
+if __name__ == '__main__':
+    [print(i) for i in get_suffix_tree('ATAAATG$')]
+
+class IdGen:
+    id_var = 0
+
+    @staticmethod
+    def get_id():
+        temp = IdGen.id_var
+        IdGen.id_var += 1
+        return temp
+
+
+def trie_construction(ls_of_strings):
+    trie = [{}]
+    edges = []
+
+    IdGen.get_id()
+    for single_string in ls_of_strings:
+        make_tree(single_string, trie, edges)
+    return trie, edges
+
+
+def make_tree(single_string, trie, edges):
+    edge_start = 0
+    for j in single_string:
+        if j in trie[edge_start]:
+            edge_end = trie[edge_start].get(j)
+        else:
+            edge_end = IdGen.get_id()
+            trie[edge_start].update({j: edge_end})
+            edges.append((edge_start, edge_end, j))
+            trie.append({})
+        edge_start = edge_end
+
+
+if __name__ == '__main__':
+    file = open('input.txt')
+    string_lists_out = file.read().splitlines()
+    trie, edges = trie_construction(string_lists_out)
+    print('\n'.join(map(lambda x: str(x[0]) + '->' + str(x[1]) + ':' + x[2], edges)))

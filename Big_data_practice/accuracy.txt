@@ -1,0 +1,5 @@
+The Accuracy is at 96.0% for the Test Data.
+This is what the Confusion Matrix looks like 
+[9, 0, 0]
+[0, 8, 0]
+[1, 0, 7]

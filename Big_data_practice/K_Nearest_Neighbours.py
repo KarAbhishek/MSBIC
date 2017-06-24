@@ -1,41 +1,91 @@
 import operator
 
-def calculate_eucleidian_distance(i,j):
-    return [((j[0]-i[0])**2+(j[1]-i[1])**2)**(0.5), j]
+
+def calculate_eucleidian_distance(i, j):
+    summation = 0
+    for idx in range(len(j)):
+        try:
+            summation += (j[idx] - i[idx])**2
+        except:
+            if type(j[idx]) != str and type(i[idx]) != str:
+                print('problem')
+            #print()
+    return [summation ** 0.5]
 
 
-def get_data_points():
-    file = open('kNN_data')
+def natural_type(x):
+    try:
+        x = int(x)
+    except ValueError:
+        try:
+            x = float(x)
+        except ValueError:
+            if x != '':
+                if x[0] == '"':
+                    x = x.replace('"', '')
+                elif x[-1] == '"':
+                    x = 'placeholder'
+    return x
+
+
+def get_data_points(file_name='data/train.csv'):
+    file = open(file_name)
     features = []
     labels = []
     lines = file.read().splitlines()
-    for line in lines:
-        splitter = line.split(' ')
-        features.append((int(splitter[0]), int(splitter[1])))
-        labels.append(int(splitter[2]))
+    for line in lines[1:]:
+        splitter = line.split(',')
+        features.append(list(map(natural_type, splitter[:-1])))
+        labels.append(natural_type(splitter[-1]))
     return features, labels
 
-def extrapolate_label_for_current(all_dist, labels):
-    all_dist.sort(key=operator.itemgetter(1))
+
+def get_test_data_points(file_name):
+    file = open(file_name)
+    features = []
+    labels = []
+    lines = file.read().splitlines()
+    for line in lines[1:]:
+        splitter = line.split(',')
+        features.append(list(map(natural_type, splitter)))
+    return features
+
 
 def knn(k):
-    ls, labels = get_data_points()
-    error = 0
-    for idx in range(len(ls)):
-        i = ls[idx]
-        true_label = labels[idx]
-        all_dist = []
-        for j_idx in range(len(ls)):
-            j = ls[j_idx]
-            j_label = labels[j_idx]
-            all_dist.append(calculate_eucleidian_distance(i,j)+[j_label])
-        all_dist.sort(key=operator.itemgetter(0))
-        all_labels = ([w[2] for w in all_dist[:k]])
-        predicted_label = sorted(all_labels, key=all_labels.count)[-1]
+    train_data, train_labels = get_data_points()
+    test_data, test_labels = get_data_points('data/test_new.csv')
 
-        print(predicted_label,true_label)
-        error += abs(predicted_label-true_label)
-    classification_error = error/len(ls)
+    # test_labels = get_test_data_points('data/iris_test_label.csv')
+    error = 0
+
+    all_dist = {}
+
+    for idx in range(len(train_data)):
+        i = train_data[idx]
+        train_label = train_labels[idx]
+
+        for j_idx in range(len(test_data)):
+            true_label = test_labels[j_idx]
+
+            j = test_data[j_idx]
+            if (j_idx, true_label) not in all_dist:
+                all_dist[(j_idx, true_label)] = []
+            all_dist[(j_idx, true_label)].append(calculate_eucleidian_distance(i, j)+[train_label])
+
+    predicted_list = []
+
+    for key in all_dist:
+        all_dist[key].sort(key=operator.itemgetter(0))
+        all_labels = ([w[1] for w in all_dist[key][:k]])
+        predicted_label = sorted(all_labels, key=all_labels.count)[-1]
+        true_label = key[1]
+        predicted_list.append((predicted_label, true_label))
+
+    for key in predicted_list:
+        error += abs(key[0] == key[1])
+        print(key[0], key[1])
+
+    classification_error = error/float(len(test_data))
     print(classification_error)
 
 knn(5)

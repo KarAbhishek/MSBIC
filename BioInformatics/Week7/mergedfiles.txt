@@ -1,0 +1,471 @@
+from collections import defaultdict
+
+
+def two_break(P, Q):
+    graph = defaultdict(list)
+    for perm_cycle in P + Q:
+        L = len(perm_cycle)
+        for i in range(len(perm_cycle)):
+            # Add the edge between consecutive items (both orders since the breakpoint graph is undirected).
+            # Note: Modulo L in the higher index for the edge between the last and first elements.
+            graph[perm_cycle[i]].append(-1 * perm_cycle[(i + 1) % L])
+            graph[-1 * perm_cycle[(i + 1) % L]].append(perm_cycle[i])
+
+    component_count = 0
+    remaining = set(graph.keys())
+    while len(remaining) > 0:
+        component_count += 1
+        queue = [remaining.pop()]  # Components are cyclic, so starting point is unimportant.
+        while queue:
+            current = queue.pop(0)
+            queue += filter(lambda node: node in remaining, graph.get(current, []))
+            remaining -= set(queue)  # Overkill, but it's nice and concise!
+
+    # Theorem: d(P,Q) = blocks(P,Q) - cycles(P,Q)
+    return sum(map(len,P)) - component_count
+
+P = '(+1 +2 +3 +4 +5 +6)'
+Q = '(+1 -3 -6 -5)(+2 -4)'
+ # with open('data/stepic_8c.txt') as input_data:
+P = P.strip().lstrip('(').rstrip(')').split(')(')
+Q = Q.strip().lstrip('(').rstrip(')').split(')(')
+P = [list(map(int, block.split())) for block in P]
+Q = [list(map(int, block.split())) for block in Q]
+
+# Get the 2-Break Distance.
+dist = two_break(P, Q)
+
+# Print and save the answer.
+print(str(dist))def chromosome_to_cycle(chromosome):
+    nodes = [0 for x in range(2*len(chromosome))]
+    for j in range(len(chromosome)):
+        i = chromosome[j]
+        if i > 0:
+            nodes[2 * j] = 2*i-1
+            nodes[2 * j+1] = 2 * i
+        else:
+            nodes[2 * j] = 2 * abs(i)
+            nodes[2 * j+1] = 2 * abs(i) - 1
+    return nodes
+
+# def chromosome_to_cycle(chromosome):
+#     for j in range(len(chromosome)):
+#         i = chromosome[j]
+#         if i > 0:
+
+
+
+if __name__ == '__main__':
+    seq_set = '(+1 -2 -3 +4)'
+    seq_set = seq_set[1:-1]
+    split_seq = seq_set.split(' ')
+    chromosome = list(map(int, split_seq))
+    print('('+' '.join(map(str, chromosome_to_cycle(chromosome)))+')')
+from BioInformatics.Week_7.chromosome_to_cycle import chromosome_to_cycle
+
+def colored_edges(p):
+    edges = []
+    for chromosome in p:
+        nodes = chromosome_to_cycle(chromosome)
+        for j in range(len(chromosome)):
+            edges.append((nodes[2*j-1], nodes[2*j]))
+    return edges
+
+# inp = '(+1 +2 +3 +4 +5 +6)'
+# fmt_p = inp[1:-1].split(')(')
+# fmt_p = [list(map(int, i.split(' '))) for i in fmt_p]
+# print(str(colored_edges(fmt_p))[1:-1])def cycle_to_chromosome(nodes):
+    chromosome = []
+    for j in range(1, len(nodes)//2+1):
+        if nodes[2*j-2] < nodes[2*j - 1]:
+            chromosome.append(nodes[2*j-1]//2)
+        else:
+            chromosome.append(-nodes[2*j - 2]//2)
+    return chromosome
+
+if __name__ == '__main__':
+    seq_set = '(2 1 4 3 6 5 7 8)'
+    seq_set = seq_set[1:-1]
+    split_seq = seq_set.split(' ')
+    nodes = list(map(int, split_seq))
+    forma = lambda x:'+'+str(x) if x>0 else str(x)
+    print('('+' '.join(list(map(forma, cycle_to_chromosome(nodes))))+')')from BioInformatics.Week_7.cycle_to_chromosome import cycle_to_chromosome
+
+
+def graph_to_genome(genome_graph):
+    p = []
+    recurse(p, genome_graph)
+    for nodes in p:
+        chromosome = cycle_to_chromosome(nodes)
+        p.append(chromosome)
+    return p
+
+
+def odd_node(n):
+    return n[0] % 2 != 0
+
+
+def recurse(collect_tuple, genome_graph):
+    if len(genome_graph) == 0 or (
+                    collect_tuple != [] and (odd_node(collect_tuple[-1]) + 1 in i[1]
+                                             for i in genome_graph)):
+        return
+    for idx, i in enumerate(genome_graph):
+        if collect_tuple != [] and odd_node(collect_tuple[-1]) + 1 == i[0] or odd_node(collect_tuple[-1]) + 1 == i[1]:
+            collect_tuple.append(i)
+            recurse(collect_tuple, genome_graph[:idx] + genome_graph[idx + 1:])
+
+
+strin = '(2, 4), (3, 6), (5, 1), (7, 9), (10, 12), (11, 8)'
+split_ls = strin[1:-1].split('), (')
+genom_graph = [tuple(map(int, i.split(', '))) for i in split_ls]
+print(graph_to_genome(genom_graph))
+from functools import reduce
+from math import ceil
+from BioInformatics.Week_7.cycle_to_chromosome import cycle_to_chromosome
+
+
+def init_select(tuple_collection, with_elem):
+    for idx, i in enumerate(tuple_collection):
+        if with_elem in i:
+            return idx, i
+
+
+def select(genome_graph):
+    return
+
+
+def graph_to_genome(genome_graph, visited_collection):
+    cycle_list = []
+
+    # def unioner(x, y):
+    #     return x.union(y)
+
+    # sol_tuple_set = reduce(unioner, map(set, genome_graph))
+    # idx, i = init_select(genome_graph, min(sol_tuple_set))
+
+    l = [(singl[0], singl) for singl in genome_graph]
+    sorter = lambda x: x[0]
+    l = sorted(l, key = sorter)
+    #cycle_list.append([])
+    while l:
+        i = l[0][1]
+        if ceil(i[0] / 2) not in visited_collection and ceil(i[1] / 2) not in visited_collection: #New Cycle
+            visited_collection.append(ceil(i[0] / 2))
+            visited_collection.append(ceil(i[1] / 2))
+            cycle_list.append([])
+        #else:
+
+
+
+        cycle_list[-1].append(i[0])
+        cycle_list[-1].append(i[1])
+        #genome_graph = genome_graph[:idx]+genome_graph[idx+1:]
+        del l[0]
+        #idx, i = select(genome_graph, min(sol_tuple_set))
+    ret = []
+
+    def rotate(x):
+        min_el = min(x)#[0] - x[1]
+        axis = [axis for axis, i in enumerate(x) if i == min_el][0]
+        # if x[0] == x[axis]+1:
+        #     axis = -1
+        # if axis%2 == 0:
+        #     axis = axis-1
+
+        return x[axis:] + x[:axis]
+
+    for i in cycle_list:
+        ret += cycle_to_chromosome(rotate(i))
+    return ret
+
+
+strin = ''
+split_ls = strin[1:-1].split('), (')
+genom_graph = [tuple(map(int, i.split(', '))) for i in split_ls]
+ls = []
+chu = graph_to_genome(genom_graph, ls)
+print(chu)from BioInformatics.Week_7.cycle_to_chromosome import cycle_to_chromosome
+from functools import reduce
+
+
+def graph_to_genome(genome_graph):
+    p = []
+    for nodes in genome_graph:
+        chromosome = cycle_to_chromosome(nodes)
+        p.append(chromosome)
+    return p
+
+
+def select(tuple_collection, with_elem):
+    for idx, i in enumerate(tuple_collection):
+        if with_elem in i:
+            return idx, i
+
+
+# def recurse(tupl, tupl_list, ls):
+#     if len(tupl_list) == 0:
+#         return
+#     selected_idx, selected_tupl = [(tupl_idx, tupl_i) for tupl_idx, tupl_i in enumerate(tupl_list) if tupl_i == max(tupl)+1][0]
+#     if selected_idx is None:
+#         return
+#     ls.append(selected_tupl)
+#     recurse(selected_tupl, tupl_list[:selected_idx]+tupl_list[selected_idx+1:], ls)
+
+
+def graph_to_genom(collected_tuples, ls):
+    if len(collected_tuples) == 0:
+        return
+
+    def unioner(x, y): return x.union(y)
+    sol_tuple_set = reduce(unioner, map(set, collected_tuples))
+    selected_idx, selected_tuple = select(tuple_collection=collected_tuples, with_elem=min(sol_tuple_set))
+    if ls == [] or min(selected_tuple) != min(ls[-1][0])+1:# cycle_break
+        #mini_ls = selected_tuple #mini_ls reboot
+        ls.append([selected_tuple])
+    else:
+        ls[-1].append(selected_tuple)
+    graph_to_genom(collected_tuples[:selected_idx] + collected_tuples[selected_idx + 1:], ls)
+
+#
+# def graph_to_genom(collected_tuples, ls):
+#
+#     sol_tuple_set = {tupl[0] for tupl in collected_tuples}
+#     selected_idx, selected_tuple = select(tuple_collection=collected_tuples, with_elem=min(sol_tuple_set))
+#     # ls = []
+#     ls.append(selected_tuple)
+#     graph_to_genom(collected_tuples[:selected_idx]+collected_tuples[selected_idx+1:], ls)
+
+
+strin = '(2, 4), (3, 6), (5, 1), (7, 9), (10, 12), (11, 8)'
+split_ls = strin[1:-1].split('), (')
+genom_graph = [tuple(map(int, i.split(', '))) for i in split_ls]
+ls = []
+graph_to_genom(genom_graph, ls)
+print(ls)import operator as op
+
+
+def apply_reversal_sorting(k, p):
+    end_loc = [idx for idx, i in enumerate(p) if i == k or i == -k][0]
+    return p[:k-1]+list(map(op.neg, p[k-1:end_loc+1][::-1]))+p[end_loc+1:]
+
+
+def not_sorted(x, y):
+    return x != y
+
+
+def greedy_sort(p):
+    ls = []
+    approx_reversal_distance = 0
+    for k in range(1, len(p)+1):
+        if not_sorted(p[k-1], k):
+            p = apply_reversal_sorting(k, p)
+            ls.append(p[:])
+            approx_reversal_distance += 1
+        if p[k-1] == -k:
+            p[k-1] = k
+            ls.append(p)
+            approx_reversal_distance += 1
+    return ls
+
+seq_set = ''
+seq_set = seq_set[1:-1]
+split_seq = seq_set.split(' ')
+seq_list = list(map(int, split_seq))
+l = [list(map(str, i)) for i in greedy_sort(seq_list)]
+l_fu = lambda j:'+'+j if j.find('-')==-1 else j
+ret_var = ['('+str(' '.join(map(l_fu, i)))+')' for i in l]
+
+file = open('xx.txt', 'w+')
+file.write('\n'.join(ret_var))
+file.close()def get_pad(n):
+    strin = ''
+    while n != 0:
+        strin += '0'
+        n //= 2
+    return strin
+
+
+def get_binary_string(n, pad):
+    ls= []
+    while n != 0:
+        ls.append(str(n % 2))
+        n //= 2
+    ret = ''.join(ls[::-1])
+    padder = lambda x: pad[:len(pad) - len(ret)]+x
+    print(padder(ret))
+    return ret
+
+
+def find_largest_time(num_list):
+    pad = get_pad(len(num_list) - 1)
+
+    for comb_mnemonic in range(2**len(num_list)):
+        bin_str = get_binary_string(comb_mnemonic, pad)
+        counter = 0
+        while comb_mnemonic != 0:
+            ultimate_list = []
+            if comb_mnemonic & 1 == 1:
+                ultimate_list.append(num_list[counter])
+
+            counter += 1
+            comb_mnemonic >>= 1
+        #[idx for idx, i in enumerate(num_list) if bin_str[idx] == '1']
+
+
+# def largest_time(num_list):
+#     maxnum = float('-inf')
+#     for i in num_list:
+#         for j in num_list:
+#             for k in num_list:
+#                 for l in num_list:
+#                     if i in range(3) and j in range(10) and k in range(7) and k in range(10):
+#                         num = 1000*i + 100*j + 10 * k+ l
+#                         if num > maxnum and num <= 2400:
+#                             maxnum = num
+#                             print(str(i)+str(j)+':'+str(k)+str(l))
+
+def find_largest_time(num_string):
+    num_perm = []
+    permutations(num_string, num_perm)
+
+    maxnum = float('-inf')
+    for n in num_perm:
+        new_num = int(n)
+        # for i in n:
+        #     new_num = new_num*10 + int(i)
+
+        if maxnum < new_num <= 2400:
+            i = int(n[0])
+            j = int(n[1])
+            k = int(n[2])
+            l = int(n[3])
+            if i in range(3) and j in range(10) and k in range(7) and k in range(10):
+                maxnum = new_num
+                print(str(i)+str(j)+':'+str(k)+str(l))
+
+
+
+def permutations(string, ls, prefix=''):
+    if string == '':
+        ls.append(prefix)
+    for i in range(len(string)):
+        permutations(string[:i] + string[i+1:], ls, string[i]+prefix)
+
+#get_pad(16)
+inputted = [2,5,9,3]
+find_largest_time(''.join(map(str, inputted)))
+#permutations('ABCD')def num_of_breakpoints(seq_list):
+    return len([1 for idx in range(1, len(seq_list)) if seq_list[idx] - seq_list[idx-1] != 1])
+
+
+seq_set = ''
+seq_set = seq_set[1:-1]
+split_seq = seq_set.split(' ')
+seq_list = list(map(int, split_seq))
+seq_list = [0] + seq_list + [len(seq_list)+1]
+print(num_of_breakpoints(seq_list))
+
+def shared_kmers(k_mer_1, k_mer_2, ls, k):
+    # first = set()
+    # for i in range(len(kmer_1) - k + 1):
+    #     first.add(kmer_1[i:i + k])
+    # second = set()
+    # for i in range(len(kmer_2) - k + 1):
+    #     first.add(kmer_1[i:i + k])
+    #     # first.add(findRverseComplement(kmer_1[i:i + k]))
+    # return first | second
+    first = {}
+    for i in range(len(k_mer_1) - k + 1):
+        k_mer = k_mer_1[i: i + k]
+        if k_mer in first:
+            first[k_mer].append(i)
+        else:
+            first[k_mer] = [i]
+    for i in range(len(k_mer_2) - k + 1):
+        k_mer = k_mer_2[i: i + k]
+        k_mer = k_mer if k_mer in first else findRverseComplement(k_mer)
+        if k_mer in first:
+            for j in first[k_mer]:
+                ls.append((j, i))
+
+
+
+def findRverseComplement(text):
+    retVar =''
+    for i in text[::-1]:
+        if i == 'A':
+            retVar+='T'
+        if i == 'G':
+            retVar+='C'
+        if i == 'C':
+            retVar+='G'
+        if i == 'T':
+            retVar+='A'
+    return retVar
+
+if __name__ == '__main__':
+    string = ''
+    for i in ls:
+        string += str(i) + '\n'
+
+    file=open('sample_ot.txt', 'w+')
+    file.write(string)
+    file.close()from BioInformatics.Week_7.cycle_to_chromosome import cycle_to_chromosome
+from math import ceil
+
+def graph_to_genome(genome_graph):
+    p = list()
+    for cycle in get_cycles(genome_graph):
+        nodes = cycle
+        chromosome = cycle_to_chromosome(nodes)
+        p.append(chromosome)
+    return p
+
+def get_cycles(genome_graph):
+    cycle = [[]]
+    for i in range(len(genome_graph)-1):
+        cycle[-1].append(genome_graph[i][0])
+        cycle[-1].append(genome_graph[i][1])
+        if abs(genome_graph[i][1] - genome_graph[i+1][0]) != 1:
+            #new cycle
+            cycle[-1] = cycle[-1][-1:] + cycle[-1][:-1]
+            cycle.append([])
+
+    cycle[-1].append(genome_graph[i+1][0])
+    cycle[-1].append(genome_graph[i+1][1])
+    cycle[-1] = cycle[-1][-1:] + cycle[-1][:-1]
+    return cycle
+
+
+# strin = ''
+# split_ls = strin[1:-1].split('), (')
+# genom_graph = [tuple(map(int, i.split(', '))) for i in split_ls]
+# ls = []
+# chu = graph_to_genome(genom_graph)
+# for i in chu:
+#     add = lambda x:'+'+str(x) if x > 0 else str(x)
+#     print('(' + ' '.join((map(add, i))) + ')', end ='')from BioInformatics.Week_7.chromosome_to_cycle import chromosome_to_cycle
+from BioInformatics.Week_7.colored_edges import colored_edges
+from BioInformatics.Week_7.trial import get_cycles
+
+def two_break_dist(input, input2):
+    #chr = chromosome_to_cycle(input)
+    col = colored_edges(input)
+    print(get_cycles(col))
+    col = colored_edges(input2)
+    print(get_cycles(col))
+
+
+seq_set = ''
+seq_set = seq_set[1:-1]
+spl = lambda x: x.split(' ')
+split_seq = list(map(spl, seq_set.split(')(')))
+chromosome = [list(map(int, i)) for i in split_seq]
+seq_set = ''
+seq_set = seq_set[1:-1]
+
+split_seq = list(map(spl, seq_set.split(')(')))
+chromosome1 = [list(map(int, i)) for i in split_seq]
+
+two_break_dist(chromosome, chromosome1)
